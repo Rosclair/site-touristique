@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chambres & Suites du Complexe — Standard, Supérieure et Suite Présidentielle au Cameroun. Confort 5 étoiles, cadre tropical exceptionnel." />
+  <title>L'Hôtel — Le Complexe · Cameroun</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a href="#reserver" class="skip-link">Aller au contenu principal</a>
+
+  <!-- ======================================================
+       NAVBAR
+       ====================================================== -->
+  <nav class="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="navbar__inner">
+
+      <a href="index.html" class="navbar__logo">Le <span>Complexe</span></a>
+
+      <ul class="navbar__nav" role="list">
+        <li><a href="index.html"        class="navbar__link">Accueil</a></li>
+        <li><a href="hotel.html"        class="navbar__link active">Hôtel</a></li>
+        <li><a href="restaurant.html"   class="navbar__link">Restaurant</a></li>
+        <li><a href="piscine.html"      class="navbar__link">Piscine</a></li>
+        <li><a href="nuit.html"    class="navbar__link">Night Club</a></li>
+        <li><a href="loisirs.html" class="navbar__link">Loisirs</a></li>
+        <li class="navbar__cta">
+          <a href="#reserver" class="btn-reserve">Réserver</a>
+        </li>
+      </ul>
+
+      <button class="navbar__hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </nav>
+
+
+  <!-- ======================================================
+       HERO — Image chambre luxe
+       ====================================================== -->
+  <section class="page-hero">
+
+    <img
+      src="https://images.unsplash.com/photo-1566073771259-470be8979a0c?w=1920&q=90"
+      alt="Suite de luxe du Complexe"
+      class="page-hero__bg"
+      loading="eager"
+      fetchpriority="high"
+      width="1920"
+      height="1080"
+    />
+    <div class="page-hero__overlay"></div>
+
+    <div class="page-hero__content">
+      <div class="container">
+        <span class="eyebrow">L'Hôtel</span>
+        <h1 class="page-hero__title">
+          Nos Chambres<br>
+          &amp; <em>Suites</em>
+        </h1>
+        <p class="page-hero__sub">
+          Du confort raffiné à l'excellence absolue — choisissez votre havre de paix tropical.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ======================================================
+       GRILLE DE CHAMBRES — 3 cards
+       ====================================================== -->
+  <section class="rooms-section">
+    <div class="container">
+
+      <header class="rooms-section__header fade-in">
+        <span class="eyebrow">Hébergement</span>
+        <h2 class="section-title">Choisissez Votre <em>Espace</em></h2>
+        <div class="gold-line gold-line--center" style="margin-top:1.5rem;"></div>
+      </header>
+
+      <div class="rooms-grid">
+
+        <!-- Chambre Standard -->
+        <article class="room-card fade-in" data-delay="0s">
+          <div class="room-card__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=900&q=85"
+              alt="Chambre Standard"
+              loading="lazy"
+            />
+          </div>
+          <div class="room-card__body">
+            <h3 class="room-card__name">Chambre Standard</h3>
+            <p class="room-card__desc">
+              Un espace élégant et lumineux, idéal pour un séjour d'affaires ou une escapade à deux. Matériaux nobles, vue sur le parc.
+            </p>
+            <ul class="room-card__amenities" aria-label="Équipements">
+              <li class="amenity">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                  <path d="M1.42 9a16 16 0 0121.16 0M5 12.55a11 11 0 0114.08 0M8.53 16.11a6 6 0 016.95 0M12 20h.01"/>
+                </svg>
+                Wi-Fi
+              </li>
+              <li class="amenity">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                  <rect x="3" y="5" width="18" height="10" rx="2"/><path d="M7 19h10M12 15v4"/>
+                </svg>
+                Climatisation
+              </li>
+              <li class="amenity">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="7" width="20" height="15" rx="2"/><polyline points="17 2 12 7 7 2"/>
+                </svg>
+                Télévision
+              </li>
+              <li class="amenity">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                  <path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/>
+                </svg>
+                Petit-déjeuner
+              </li>
+              <li class="amenity">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/>
+                </svg>
+                Coffre-fort
+              </li>
+            </ul>
+            <div class="room-card__price-row">
+              <div>
+                <span class="room-card__price-amount">75 000</span>
+                <span class="room-card__price-unit">FCFA / nuit</span>
+              </div>
+              <a href="#reserver" class="btn-reserve">Réserver</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Chambre Supérieure -->
+        <article class="room-card fade-in" data-delay="0.1s">
+          <div class="room-card__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=900&q=85"
+              alt="Chambre Supérieure avec balcon"
+              loading="lazy"
+            />
+            <span class="room-card__badge">Populaire</span>
+          </div>
+          <div class="room-card__body">
+            <h3 class="room-card__name">Chambre Supérieure</h3>
+            <p class="room-card__desc">
+              Spacieuse et baignée de lumière, avec balcon privatif surplombant la végétation tropicale. Baignoire îlot, linge brodé.
+            </p>
+            <ul class="room-card__amenities" aria-label="Équipements">
+              <li class="amenity">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                  <path d="M1.42 9a16 16 0 0121.16 0M5 12.55a11 11 0 0114.08 0M8.53 16.11a6 6 0 016.95 0M12 20h.01"/>
+                </svg>
+                Wi-Fi
+              </li>
+              <li class="amenity">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                  <rect x="3" y="5" width="18" height="10" rx="2"/><path d="M7 19h10M12 15v4"/>
+                </svg>
+                Climatisation
+              </li>
+              <li class="amenity">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="7" width="20" height="15" rx="2"/><polyline points="17 2 12 7 7 2"/>
+                </svg>
+                Télévision
+              </li>
+              <li class="amenity">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                  <path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/>
+                </svg>
+                Petit-déjeuner
+              </li>
+              <li class="amenity">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 9l9-7 9 7v11a1 1 0 01-1 1H4a1 1 0 01-1-1V9z"/><polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+                Balcon privé
+              </li>
+              <li class="amenity">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                  <path d="M4 12h16v4a4 4 0 01-4 4H8a4 4 0 01-4-4v-4z"/><path d="M4 12V9a4 4 0 014-4h0a4 4 0 014 4v3"/>
+                </svg>
+                Baignoire
+              </li>
+            </ul>
+            <div class="room-card__price-row">
+              <div>
+                <span class="room-card__price-amount">120 000</span>
+                <span class="room-card__price-unit">FCFA / nuit</span>
+              </div>
+              <a href="#reserver" class="btn-reserve">Réserver</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Suite Présidentielle -->
+        <article class="room-card fade-in" data-delay="0.2s">
+          <div class="room-card__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=900&q=85"
+              alt="Suite Présidentielle"
+              loading="lazy"
+            />
+            <span class="room-card__badge">Prestige</span>
+          </div>
+          <div class="room-card__body">
+            <h3 class="room-card__name">Suite Présidentielle</h3>
+            <p class="room-card__desc">
+              L'apogée du luxe tropical. Terrasse panoramique, jacuzzi privatif, salon séparé et service dédié 24h/24.
+            </p>
+            <ul class="room-card__amenities" aria-label="Équipements">
+              <li class="amenity">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                  <path d="M1.42 9a16 16 0 0121.16 0M5 12.55a11 11 0 0114.08 0M8.53 16.11a6 6 0 016.95 0M12 20h.01"/>
+                </svg>
+                Wi-Fi
+              </li>
+              <li class="amenity">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                  <rect x="3" y="5" width="18" height="10" rx="2"/><path d="M7 19h10M12 15v4"/>
+                </svg>
+                Climatisation
+              </li>
+              <li class="amenity">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+                </svg>
+                Terrasse panoramique
+              </li>
+              <li class="amenity">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                  <path d="M2 17a5 5 0 0020 0v-3H2v3z"/><circle cx="6" cy="14" r="1.2" fill="currentColor" stroke="none"/><circle cx="10" cy="12" r="1.2" fill="currentColor" stroke="none"/><circle cx="14" cy="14" r="1.2" fill="currentColor" stroke="none"/><circle cx="18" cy="12" r="1.2" fill="currentColor" stroke="none"/>
+                </svg>
+                Jacuzzi privé
+              </li>
+              <li class="amenity">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                  <path d="M3 22h18M4 22V10.5L12 4l8 6.5V22M9 22v-6h6v6"/>
+                </svg>
+                Petit-déjeuner inclus
+              </li>
+              <li class="amenity">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                  <path d="M20 12H4a2 2 0 00-2 2v2h20v-2a2 2 0 00-2-2z"/><path d="M12 3a7 7 0 00-7 7h14a7 7 0 00-7-7z"/><line x1="2" y1="20" x2="22" y2="20"/>
+                </svg>
+                Room service 24h
+              </li>
+            </ul>
+            <div class="room-card__price-row">
+              <div>
+                <span class="room-card__price-amount">250 000</span>
+                <span class="room-card__price-unit">FCFA / nuit</span>
+              </div>
+              <a href="#reserver" class="btn-reserve btn-reserve--filled">Réserver</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       POURQUOI NOUS CHOISIR — 3 colonnes
+       ====================================================== -->
+  <section class="why-section">
+    <div class="container">
+
+      <header class="why-section__header fade-in">
+        <span class="eyebrow">Notre Engagement</span>
+        <h2 class="section-title">Pourquoi Nous <em>Choisir</em></h2>
+        <div class="gold-line gold-line--center" style="margin-top:1.5rem;"></div>
+      </header>
+
+      <div class="why-grid">
+
+        <article class="why-card fade-in" data-delay="0s">
+          <svg class="why-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+          </svg>
+          <h3 class="why-card__title">Confort Absolu</h3>
+          <p class="why-card__text">
+            Literies Simmons premium, linge de maison brodé au fil d'or, matériaux nobles sélectionnés avec soin. Chaque détail est une invitation au bien-être.
+          </p>
+        </article>
+
+        <article class="why-card fade-in" data-delay="0.12s">
+          <svg class="why-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+          </svg>
+          <h3 class="why-card__title">Service Impeccable</h3>
+          <p class="why-card__text">
+            Notre équipe est à votre disposition 24h/24, 7j/7. Concierge dédié, service en chambre, transferts aéroport — vos désirs sont nos priorités.
+          </p>
+        </article>
+
+        <article class="why-card fade-in" data-delay="0.24s">
+          <svg class="why-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+          </svg>
+          <h3 class="why-card__title">Cadre Exceptionnel</h3>
+          <p class="why-card__text">
+            Niché dans un écrin de nature camerounaise préservée, l'hôtel offre une immersion totale dans un environnement tropical d'une beauté rare.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       GALERIE CHAMBRE — Mosaïque 4 images
+       ====================================================== -->
+  <section class="hotel-gallery-section">
+    <div class="container">
+
+      <header class="hotel-gallery-section__header fade-in">
+        <span class="eyebrow">Galerie</span>
+        <h2 class="section-title">L'Intérieur en <em>Images</em></h2>
+        <div class="gold-line gold-line--center" style="margin-top:1.5rem;"></div>
+      </header>
+
+      <div class="hotel-gallery-mosaic">
+
+        <div class="gallery__item fade-in" data-delay="0s">
+          <img
+            src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=900&q=85"
+            alt="Suite panoramique"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="gallery__item fade-in" data-delay="0.1s">
+          <img
+            src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=900&q=85"
+            alt="Salle de bain en marbre"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="gallery__item fade-in" data-delay="0.18s">
+          <img
+            src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=900&q=85"
+            alt="Vue depuis la terrasse"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="gallery__item fade-in" data-delay="0.26s">
+          <img
+            src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=900&q=85"
+            alt="Chambre Supérieure de nuit"
+            loading="lazy"
+          />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       CTA RÉSERVATION — Formulaire front-end
+       ====================================================== -->
+  <section class="booking-section" id="reserver">
+    <div class="container">
+      <div class="booking-inner">
+
+        <!-- Informations gauche -->
+        <div class="fade-in">
+          <span class="eyebrow">Réservation</span>
+          <h2 class="section-title">Réservez<br>Votre <em>Séjour</em></h2>
+          <div class="gold-line" style="margin-top:1.5rem;"></div>
+
+          <p class="booking-info__text">
+            Choisissez votre chambre et laissez-nous préparer un séjour inoubliable au cœur du Cameroun. Notre équipe vous confirmera votre réservation sous 24 heures.
+          </p>
+
+          <div class="booking-perks">
+            <div class="booking-perk">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              Confirmation sous 24 heures
+            </div>
+            <div class="booking-perk">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              Paiement à l'arrivée
+            </div>
+            <div class="booking-perk">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              Annulation gratuite 48h avant
+            </div>
+            <div class="booking-perk">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              Service conciergerie offert
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulaire droite -->
+        <div class="fade-in" data-delay="0.15s">
+          <div class="booking-form">
+
+            <h3 class="booking-form__title">Votre Réservation</h3>
+
+            <div id="form-wrap">
+              <form id="booking-form" novalidate>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="f-nom">Nom complet</label>
+                    <input
+                      class="form-input"
+                      type="text"
+                      id="f-nom"
+                      name="nom"
+                      placeholder="Jean Dupont"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="f-email">Email</label>
+                    <input
+                      class="form-input"
+                      type="email"
+                      id="f-email"
+                      name="email"
+                      placeholder="jean@exemple.cm"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="f-arrivee">Date d'arrivée</label>
+                    <input
+                      class="form-input"
+                      type="date"
+                      id="f-arrivee"
+                      name="arrivee"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="f-depart">Date de départ</label>
+                    <input
+                      class="form-input"
+                      type="date"
+                      id="f-depart"
+                      name="depart"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="f-chambre">Type de chambre</label>
+                    <select class="form-select" id="f-chambre" name="chambre" required>
+                      <option value="" disabled selected>Sélectionner</option>
+                      <option value="standard">Chambre Standard — 75 000 FCFA</option>
+                      <option value="superieure">Chambre Supérieure — 120 000 FCFA</option>
+                      <option value="suite">Suite Présidentielle — 250 000 FCFA</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="f-personnes">Nombre de personnes</label>
+                    <select class="form-select" id="f-personnes" name="personnes">
+                      <option value="1">1 personne</option>
+                      <option value="2" selected>2 personnes</option>
+                      <option value="3">3 personnes</option>
+                      <option value="4">4 personnes</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group form-group--full" style="grid-column:1/-1">
+                  <label class="form-label" for="f-message">Demandes spéciales <span style="opacity:.5;font-size:.9em;">(facultatif)</span></label>
+                  <textarea
+                    class="form-textarea"
+                    id="f-message"
+                    name="message"
+                    placeholder="Ex : chambre non-fumeur, lit bébé, régime alimentaire particulier..."
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn-reserve btn-reserve--filled">
+                  Confirmer la réservation
+                </button>
+
+                <p class="form-note">
+                  Réponse sous 24h &nbsp;·&nbsp; Paiement à l'arrivée &nbsp;·&nbsp; Sans frais cachés
+                </p>
+
+              </form>
+            </div>
+
+            <div class="form-success" id="form-success" aria-live="polite">
+              <svg class="form-success__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+              <h3 class="form-success__title">Demande envoyée !</h3>
+              <p class="form-success__text">
+                Merci pour votre réservation. Notre équipe vous contactera sous 24 heures pour confirmer votre séjour et vous accompagner dans vos préparatifs.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       FOOTER
+       ====================================================== -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer__grid">
+
+        <div>
+          <div class="footer__logo">Le <span>Complexe</span></div>
+          <p class="footer__tagline">
+            L'excellence africaine à son apogée. Un complexe touristique haut de gamme au cœur du Cameroun.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Twitter / X">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Navigation</p>
+          <ul class="footer__links">
+            <li><a href="index.html"        class="footer__nav-link">Accueil</a></li>
+            <li><a href="hotel.html"        class="footer__nav-link">Hôtel</a></li>
+            <li><a href="restaurant.html"   class="footer__nav-link">Restaurant</a></li>
+            <li><a href="piscine.html"      class="footer__nav-link">Piscine</a></li>
+            <li><a href="nuit.html"    class="footer__nav-link">Night Club</a></li>
+            <li><a href="loisirs.html" class="footer__nav-link">Loisirs</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__col-title">L'Hôtel</p>
+          <ul class="footer__links">
+            <li><a href="#reserver"  class="footer__nav-link">Réservation</a></li>
+            <li><a href="#"          class="footer__nav-link">Chambre Standard</a></li>
+            <li><a href="#"          class="footer__nav-link">Chambre Supérieure</a></li>
+            <li><a href="#"          class="footer__nav-link">Suite Présidentielle</a></li>
+            <li><a href="#"          class="footer__nav-link">Services inclus</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Contact</p>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Route de l'Aéroport, Yaoundé<br>Cameroun</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+            </svg>
+            <span>+237 6 00 000 000</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span>hotel@lecomplexe.cm</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 Le Complexe · Tous droits réservés</span>
+        <span>Conçu avec soin au Cameroun</span>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <script src="main.js"></script>
+
+  <script>
+    /* Gestion du formulaire de réservation */
+    (function () {
+      const form    = document.getElementById('booking-form');
+      const wrap    = document.getElementById('form-wrap');
+      const success = document.getElementById('form-success');
+
+      /* Dates minimales = aujourd'hui */
+      const today = new Date().toISOString().split('T')[0];
+      const inputArrivee = document.getElementById('f-arrivee');
+      const inputDepart  = document.getElementById('f-depart');
+      if (inputArrivee) inputArrivee.min = today;
+      if (inputDepart)  inputDepart.min  = today;
+
+      /* Départ ≥ Arrivée */
+      if (inputArrivee && inputDepart) {
+        inputArrivee.addEventListener('change', () => {
+          inputDepart.min = inputArrivee.value || today;
+          if (inputDepart.value && inputDepart.value < inputArrivee.value) {
+            inputDepart.value = inputArrivee.value;
+          }
+        });
+      }
+
+      /* Soumission */
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          wrap.style.transition = 'opacity 0.3s ease';
+          wrap.style.opacity = '0';
+          wrap.style.pointerEvents = 'none';
+          setTimeout(() => {
+            wrap.style.display = 'none';
+            success.classList.add('visible');
+          }, 320);
+        });
+      }
+    })();
+  </script>
+
+</body>
+</html>

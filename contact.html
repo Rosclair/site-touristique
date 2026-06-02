@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contactez Le Complexe — Adresse, téléphone, WhatsApp et formulaire de contact. Complexe touristique haut de gamme au Cameroun." />
+  <title>Contact — Le Complexe · Cameroun</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a href="#contact-form-wrap" class="skip-link">Aller au formulaire de contact</a>
+
+  <!-- ======================================================
+       NAVBAR
+       ====================================================== -->
+  <nav class="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">Le <span>Complexe</span></a>
+
+      <ul class="navbar__nav" role="list">
+        <li><a href="index.html"      class="navbar__link">Accueil</a></li>
+        <li><a href="hotel.html"      class="navbar__link">Hôtel</a></li>
+        <li><a href="restaurant.html" class="navbar__link">Restaurant</a></li>
+        <li><a href="piscine.html"    class="navbar__link">Piscine</a></li>
+        <li><a href="nuit.html"       class="navbar__link">Night Club</a></li>
+        <li><a href="loisirs.html"    class="navbar__link">Loisirs</a></li>
+        <li class="navbar__cta">
+          <a href="hotel.html#reserver" class="btn-reserve">Réserver</a>
+        </li>
+      </ul>
+
+      <button class="navbar__hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- ======================================================
+       HERO SOBRE — Vue aérienne
+       ====================================================== -->
+  <section class="page-hero">
+    <img
+      src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=1920&q=90"
+      alt="Vue aérienne du Complexe"
+      class="page-hero__bg"
+      loading="eager"
+      fetchpriority="high"
+      width="1920"
+      height="1080"
+    />
+    <div class="page-hero__overlay"></div>
+
+    <div class="page-hero__content">
+      <div class="container">
+        <span class="eyebrow">Nous joindre</span>
+        <h1 class="page-hero__title">
+          Contactez<br>
+          <em>Le Complexe</em>
+        </h1>
+        <p class="page-hero__sub">
+          Notre équipe est à votre écoute pour toute question, réservation ou demande particulière.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       FORMULAIRE + INFOS PRATIQUES
+       ====================================================== -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-inner">
+
+        <!-- Formulaire (gauche sur desktop) -->
+        <div class="fade-in">
+          <div class="booking-form">
+
+            <h2 class="booking-form__title">Envoyez-nous<br>un message</h2>
+
+            <div id="contact-form-wrap">
+              <form id="contact-form" novalidate>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="c-prenom">Prénom</label>
+                    <input class="form-input" type="text" id="c-prenom" name="prenom" placeholder="Jean" required />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="c-nom">Nom</label>
+                    <input class="form-input" type="text" id="c-nom" name="nom" placeholder="Dupont" required />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="c-email">Email</label>
+                    <input class="form-input" type="email" id="c-email" name="email" placeholder="jean@exemple.cm" required />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="c-tel">Téléphone <span style="opacity:.5;font-size:.9em;">(facultatif)</span></label>
+                    <input class="form-input" type="tel" id="c-tel" name="tel" placeholder="+237 6 00 000 000" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="c-service">Service concerné</label>
+                  <select class="form-select" id="c-service" name="service" required>
+                    <option value="" disabled selected>Choisir un service</option>
+                    <option value="hotel">Hôtel — Chambres &amp; Suites</option>
+                    <option value="restaurant">Restaurant — Gastronomie</option>
+                    <option value="piscine">Piscine — Accès &amp; Abonnements</option>
+                    <option value="nightclub">Night Club — Tables VIP</option>
+                    <option value="loisirs">Loisirs — Pisciculture &amp; Manège</option>
+                    <option value="evenement">Événement privé / Corporate</option>
+                    <option value="partenariat">Partenariat commercial</option>
+                    <option value="autre">Demande générale</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="c-objet">Objet</label>
+                  <input class="form-input" type="text" id="c-objet" name="objet" placeholder="Ex : Demande de tarif groupe, événement d'entreprise..." />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="c-message">Message</label>
+                  <textarea
+                    class="form-textarea"
+                    id="c-message"
+                    name="message"
+                    placeholder="Décrivez votre demande en détail. Nous vous répondrons dans les 24 heures."
+                    style="min-height:130px;"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="form-group" style="flex-direction:row;align-items:flex-start;gap:0.75rem;margin-bottom:var(--sp-md);">
+                  <input
+                    type="checkbox"
+                    id="c-consent"
+                    name="consent"
+                    required
+                    style="margin-top:3px;flex-shrink:0;accent-color:var(--gold);width:16px;height:16px;cursor:pointer;"
+                  />
+                  <label for="c-consent" style="font-size:0.78rem;color:var(--ivory-60);line-height:1.6;cursor:pointer;">
+                    J'accepte que mes données soient utilisées pour répondre à ma demande. Aucune diffusion à des tiers.
+                  </label>
+                </div>
+
+                <button type="submit" class="btn-reserve btn-reserve--filled">
+                  Envoyer le message
+                </button>
+
+                <p class="form-note">Réponse garantie sous 24 heures · Confidentialité assurée</p>
+
+              </form>
+            </div>
+
+            <div class="form-success" id="contact-success" aria-live="polite">
+              <svg class="form-success__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+              <h3 class="form-success__title">Message envoyé !</h3>
+              <p class="form-success__text">
+                Merci de nous avoir contactés. Notre équipe vous répondra sous 24 heures. Pour toute urgence, appelez-nous directement au +237 6 00 000 000.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Infos pratiques (droite sur desktop) -->
+        <div class="fade-in" data-delay="0.15s">
+
+          <span class="eyebrow">Nous trouver</span>
+          <h2 class="section-title" style="margin-bottom:var(--sp-lg);">
+            Infos <em>Pratiques</em>
+          </h2>
+
+          <div class="contact-info-card">
+
+            <div class="contact-detail">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+              <div>
+                <span class="contact-detail__label">Adresse</span>
+                <span class="contact-detail__value">
+                  Route de l'Aéroport International<br>
+                  Yaoundé — Cameroun<br>
+                  <a href="https://maps.google.com/?q=Yaoundé+Cameroun" target="_blank" rel="noopener" style="color:var(--gold);font-size:0.78rem;letter-spacing:0.06em;">
+                    Voir sur Google Maps →
+                  </a>
+                </span>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+              </svg>
+              <div>
+                <span class="contact-detail__label">Téléphone</span>
+                <span class="contact-detail__value">
+                  <a href="tel:+237600000000">+237 6 00 000 000</a><br>
+                  Disponible 7j/7 · 8h00 – 22h00
+                </span>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <div>
+                <span class="contact-detail__label">Email</span>
+                <span class="contact-detail__value">
+                  <a href="mailto:contact@lecomplexe.cm">contact@lecomplexe.cm</a><br>
+                  <a href="mailto:reservation@lecomplexe.cm" style="font-size:0.82rem;">reservation@lecomplexe.cm</a>
+                </span>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              <div>
+                <span class="contact-detail__label">WhatsApp</span>
+                <span class="contact-detail__value" style="margin-bottom:0.6rem;display:block;">
+                  Réponse rapide garantie
+                </span>
+                <a
+                  href="https://wa.me/237600000000?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20Le%20Complexe."
+                  class="btn-whatsapp"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Nous contacter sur WhatsApp"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                  </svg>
+                  Écrire sur WhatsApp
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       HORAIRES D'OUVERTURE — 6 cards
+       ====================================================== -->
+  <section class="opening-hours-section">
+    <div class="container">
+
+      <header class="opening-hours-section__header fade-in">
+        <span class="eyebrow">Planning</span>
+        <h2 class="section-title">Horaires d'<em>Ouverture</em></h2>
+        <div class="gold-line gold-line--center" style="margin-top:1.5rem;"></div>
+      </header>
+
+      <div class="hours-services-grid">
+
+        <div class="service-hours-card fade-in" data-delay="0s">
+          <svg class="service-hours-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 22V9.5L12 3l9 6.5V22H3z"/><rect x="9" y="14" width="6" height="8"/>
+          </svg>
+          <h3 class="service-hours-card__name">Hôtel — Réception</h3>
+          <p class="service-hours-card__hours">
+            Ouvert 7 jours / 7<br>
+            24 heures sur 24
+          </p>
+          <p class="service-hours-card__note">Check-in dès 14h · Check-out avant 12h</p>
+        </div>
+
+        <div class="service-hours-card fade-in" data-delay="0.06s">
+          <svg class="service-hours-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 2v7a5 5 0 0010 0V2M8 2v20M21 15V2s-5 3.5-5 8 5 5 5 5v7"/>
+          </svg>
+          <h3 class="service-hours-card__name">Restaurant</h3>
+          <p class="service-hours-card__hours">
+            Déjeuner : 12h00 – 15h00<br>
+            Dîner : 19h00 – 23h00
+          </p>
+          <p class="service-hours-card__note">Fermé lundi midi · Réservation conseillée</p>
+        </div>
+
+        <div class="service-hours-card fade-in" data-delay="0.12s">
+          <svg class="service-hours-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+            <path d="M2 12c1.5-2.5 3.5-2.5 5 0s3.5 2.5 5 0 3.5-2.5 5 0"/><path d="M2 18c1.5-2.5 3.5-2.5 5 0s3.5 2.5 5 0 3.5-2.5 5 0"/>
+            <circle cx="19" cy="5" r="2.5"/><path d="M16.5 7l-4 5"/>
+          </svg>
+          <h3 class="service-hours-card__name">Piscine</h3>
+          <p class="service-hours-card__hours">
+            Lundi – Dimanche<br>
+            8h00 – 20h00
+          </p>
+          <p class="service-hours-card__note">Accès résidents : 6h00 – 23h00</p>
+        </div>
+
+        <div class="service-hours-card fade-in" data-delay="0.18s">
+          <svg class="service-hours-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
+          </svg>
+          <h3 class="service-hours-card__name">Night Club</h3>
+          <p class="service-hours-card__hours">
+            Vendredi &amp; Samedi<br>
+            22h00 – 4h00
+          </p>
+          <p class="service-hours-card__note">Événements spéciaux sur agenda</p>
+        </div>
+
+        <div class="service-hours-card fade-in" data-delay="0.24s">
+          <svg class="service-hours-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 12c0 0-4-6-8-6S4 12 4 12s4 6 8 6 8-6 8-6z"/>
+            <circle cx="9" cy="11" r="1" fill="currentColor" stroke="none"/>
+            <path d="M20 12l3-4v8l-3-4z"/>
+          </svg>
+          <h3 class="service-hours-card__name">Pisciculture</h3>
+          <p class="service-hours-card__hours">
+            Tous les jours<br>
+            8h00 – 17h00
+          </p>
+          <p class="service-hours-card__note">Visite sur réservation — min. 5 pers.</p>
+        </div>
+
+        <div class="service-hours-card fade-in" data-delay="0.3s">
+          <svg class="service-hours-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+          </svg>
+          <h3 class="service-hours-card__name">Manège &amp; Loisirs</h3>
+          <p class="service-hours-card__hours">
+            Tous les jours<br>
+            9h00 – 20h00
+          </p>
+          <p class="service-hours-card__note">Sans réservation · Familles bienvenues</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       BANDEAU FINAL — CTA réservation
+       ====================================================== -->
+  <section class="cta-final">
+    <div class="container">
+      <div class="fade-in">
+
+        <span class="eyebrow">Réservation</span>
+
+        <h2 class="cta-final__title">
+          Prêt à Vivre<br>
+          <em>l'Expérience ?</em>
+        </h2>
+
+        <div class="gold-line gold-line--center"></div>
+
+        <p class="cta-final__sub">
+          Réservez dès maintenant et laissez-vous transporter dans un monde de luxe, de sérénité et d'émotions au cœur du Cameroun.
+        </p>
+
+        <div class="cta-final__actions">
+          <a href="hotel.html#reserver" class="btn-reserve btn-reserve--filled">Réserver un séjour</a>
+          <a href="restaurant.html#reserver-table" class="btn-outline-ivory">Réserver une table</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       FOOTER
+       ====================================================== -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer__grid">
+        <div>
+          <div class="footer__logo">Le <span>Complexe</span></div>
+          <p class="footer__tagline">L'excellence africaine à son apogée. Complexe touristique haut de gamme au Cameroun.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Twitter / X">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Navigation</p>
+          <ul class="footer__links">
+            <li><a href="index.html"      class="footer__nav-link">Accueil</a></li>
+            <li><a href="hotel.html"      class="footer__nav-link">Hôtel</a></li>
+            <li><a href="restaurant.html" class="footer__nav-link">Restaurant</a></li>
+            <li><a href="piscine.html"    class="footer__nav-link">Piscine</a></li>
+            <li><a href="nuit.html"       class="footer__nav-link">Night Club</a></li>
+            <li><a href="loisirs.html"    class="footer__nav-link">Loisirs</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Liens utiles</p>
+          <ul class="footer__links">
+            <li><a href="galerie.html"                class="footer__nav-link">Galerie photos</a></li>
+            <li><a href="contact.html"                class="footer__nav-link">Contact</a></li>
+            <li><a href="hotel.html#reserver"         class="footer__nav-link">Réservation hôtel</a></li>
+            <li><a href="restaurant.html#reserver-table" class="footer__nav-link">Réservation restaurant</a></li>
+            <li><a href="nuit.html#reserver-vip"      class="footer__nav-link">Table VIP nuit</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Contact</p>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Route de l'Aéroport, Yaoundé<br>Cameroun</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+            </svg>
+            <span>+237 6 00 000 000</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span>contact@lecomplexe.cm</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 Le Complexe · Tous droits réservés</span>
+        <span>Conçu avec soin au Cameroun</span>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <script src="main.js"></script>
+
+  <script>
+    (function () {
+      const form    = document.getElementById('contact-form');
+      const wrap    = document.getElementById('contact-form-wrap');
+      const success = document.getElementById('contact-success');
+
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          const consent = form.querySelector('#c-consent');
+          if (consent && !consent.checked) {
+            consent.focus();
+            consent.setCustomValidity('Veuillez accepter la politique de confidentialité.');
+            consent.reportValidity();
+            return;
+          }
+          if (consent) consent.setCustomValidity('');
+
+          wrap.style.transition = 'opacity 0.3s ease';
+          wrap.style.opacity    = '0';
+          wrap.style.pointerEvents = 'none';
+          setTimeout(() => {
+            wrap.style.display = 'none';
+            success.classList.add('visible');
+          }, 320);
+        });
+      }
+    })();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Le Complexe — Complexe touristique haut de gamme au Cameroun. Hôtel, restaurant gastronomique, piscines, boîte de nuit, pisciculture et loisirs." />
+  <title>Le Complexe — Luxe &amp; Nature au Cameroun</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a href="#services" class="skip-link">Aller au contenu principal</a>
+
+  <!-- ======================================================
+       NAVBAR
+       ====================================================== -->
+  <nav class="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="navbar__inner">
+
+      <a href="index.html" class="navbar__logo">
+        Le <span>Complexe</span>
+      </a>
+
+      <ul class="navbar__nav" role="list">
+        <li><a href="index.html"        class="navbar__link active">Accueil</a></li>
+        <li><a href="hotel.html"        class="navbar__link">Hôtel</a></li>
+        <li><a href="restaurant.html"   class="navbar__link">Restaurant</a></li>
+        <li><a href="piscine.html"      class="navbar__link">Piscine</a></li>
+        <li><a href="nuit.html"       class="navbar__link">Night Club</a></li>
+        <li><a href="loisirs.html"    class="navbar__link">Loisirs</a></li>
+        <li class="navbar__cta">
+          <a href="hotel.html#reserver" class="btn-reserve">Réserver</a>
+        </li>
+      </ul>
+
+      <button class="navbar__hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </nav>
+
+
+  <!-- ======================================================
+       HERO
+       ====================================================== -->
+  <section id="accueil" class="hero" aria-labelledby="hero-title">
+
+    <img
+      src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1920&q=90"
+      alt="Piscine à débordement du Complexe"
+      class="hero__bg"
+      loading="eager"
+      fetchpriority="high"
+      width="1920"
+      height="1080"
+    />
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">Cameroun · Afrique Centrale</p>
+
+      <h1 id="hero-title" class="hero__title">
+        L'Art de Vivre<br>
+        au <em>Cœur</em> de l'Afrique
+      </h1>
+
+      <p class="hero__subtitle">
+        Un sanctuaire de luxe tropical où l'excellence africaine
+        rencontre une nature d'une beauté absolue.
+      </p>
+
+      <div class="hero__ctas">
+        <a href="#services" class="btn-outline-ivory">Découvrir</a>
+        <a href="hotel.html#reserver" class="btn-reserve btn-reserve--filled">Réserver maintenant</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <div class="hero__scroll-line"></div>
+      <span>Défiler</span>
+    </div>
+
+  </section>
+
+
+  <!-- ======================================================
+       SERVICES — 6 cartes
+       ====================================================== -->
+  <section id="services" class="services">
+    <div class="container">
+
+      <header class="services__header fade-in">
+        <span class="eyebrow">Nos Prestations</span>
+        <h2 class="section-title">
+          Une Destination,<br>
+          <em>Six Expériences</em>
+        </h2>
+        <div class="gold-line gold-line--center" style="margin-top:1.5rem;"></div>
+      </header>
+
+      <div class="services__grid">
+
+        <!-- Hôtel -->
+        <article class="service-card fade-in" data-delay="0s">
+          <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 22V9.5L12 3l9 6.5V22H3z"/>
+            <rect x="9" y="14" width="6" height="8"/>
+            <path d="M9 10h.01M12 10h.01M15 10h.01"/>
+          </svg>
+          <h3 class="service-card__title">Hôtel</h3>
+          <p class="service-card__text">
+            Villas et suites d'exception nichées dans une végétation tropicale luxuriante. Chaque espace est pensé pour conjuguer intimité, raffinement et confort absolu.
+          </p>
+          <a href="hotel.html" class="service-card__link">
+            Découvrir l'hôtel
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <!-- Restaurant -->
+        <article class="service-card fade-in" data-delay="0.08s">
+          <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 2v7a5 5 0 0010 0V2"/>
+            <path d="M8 2v20"/>
+            <path d="M21 15V2s-5 3.5-5 8 5 5 5 5v7"/>
+          </svg>
+          <h3 class="service-card__title">Restaurant</h3>
+          <p class="service-card__text">
+            Une cuisine gastronomique qui célèbre les saveurs d'Afrique Centrale revisitées par nos chefs. Dîner au clair de lune ou sous les étoiles tropicales.
+          </p>
+          <a href="restaurant.html" class="service-card__link">
+            Voir la carte
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <!-- Piscine -->
+        <article class="service-card fade-in" data-delay="0.16s">
+          <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+            <path d="M2 12c1.5-2.5 3.5-2.5 5 0s3.5 2.5 5 0 3.5-2.5 5 0"/>
+            <path d="M2 18c1.5-2.5 3.5-2.5 5 0s3.5 2.5 5 0 3.5-2.5 5 0"/>
+            <circle cx="19" cy="5" r="2.5"/>
+            <path d="M16.5 7l-4 5"/>
+          </svg>
+          <h3 class="service-card__title">Piscine</h3>
+          <p class="service-card__text">
+            Piscines à débordement et bassin naturel aux reflets turquoise. Laissez-vous envelopper par la chaleur dorée du soleil camerounais en toute sérénité.
+          </p>
+          <a href="piscine.html" class="service-card__link">
+            Explorer la piscine
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <!-- Boîte de nuit -->
+        <article class="service-card fade-in" data-delay="0.24s">
+          <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 18V5l12-2v13"/>
+            <circle cx="6" cy="18" r="3"/>
+            <circle cx="18" cy="16" r="3"/>
+          </svg>
+          <h3 class="service-card__title">Night Club</h3>
+          <p class="service-card__text">
+            Des soirées enflammées rythmées par les meilleurs artistes. Un espace scénographié où musique, lumières et cocktails créent une atmosphère inoubliable.
+          </p>
+          <a href="nuit.html" class="service-card__link">
+            Vivre la nuit
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <!-- Pisciculture -->
+        <article class="service-card fade-in" data-delay="0.32s">
+          <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 12c0 0-4-6-8-6S4 12 4 12s4 6 8 6 8-6 8-6z"/>
+            <circle cx="9" cy="11" r="1" fill="currentColor" stroke="none"/>
+            <path d="M20 12l3-4v8l-3-4z"/>
+          </svg>
+          <h3 class="service-card__title">Pisciculture</h3>
+          <p class="service-card__text">
+            Découvrez nos bassins d'élevage en pleine nature. Une expérience éducative et sensorielle unique — de l'étang à l'assiette, la fraîcheur du terroir.
+          </p>
+          <a href="loisirs.html" class="service-card__link">
+            Voir les bassins
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <!-- Loisirs -->
+        <article class="service-card fade-in" data-delay="0.4s">
+          <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2a7 7 0 017 7c0 4-3 7-5 9H10c-2-2-5-5-5-9a7 7 0 017-7z"/>
+            <path d="M12 22v-4"/>
+            <path d="M9 9l1.5 3h3L15 9"/>
+          </svg>
+          <h3 class="service-card__title">Loisirs</h3>
+          <p class="service-card__text">
+            Randonnées en forêt tropicale, sports nautiques, spa et bien-être, activités enfants — chaque instant est une invitation à l'aventure ou à la détente.
+          </p>
+          <a href="loisirs.html" class="service-card__link">
+            Voir les activités
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       L'EXPÉRIENCE — Layout asymétrique
+       ====================================================== -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <div class="experience__inner">
+
+        <!-- Visuel gauche -->
+        <div class="experience__visual fade-in">
+          <div class="experience__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=1200&q=85"
+              alt="Vue aérienne du Complexe"
+              loading="lazy"
+            />
+          </div>
+          <div class="experience__frame" aria-hidden="true"></div>
+          <div class="experience__badge" aria-hidden="true">
+            <span class="experience__badge-num">5★</span>
+            <span class="experience__badge-label">Étoiles</span>
+          </div>
+        </div>
+
+        <!-- Contenu droite -->
+        <div class="experience__content fade-in" data-delay="0.15s">
+
+          <span class="eyebrow">L'Expérience</span>
+          <h2 class="section-title">
+            Là où le Luxe<br>
+            <em>Rencontre l'Afrique</em>
+          </h2>
+          <div class="gold-line" style="margin-top:1.5rem;"></div>
+
+          <p class="experience__text">
+            Niché dans un cadre naturel d'exception au cœur du Cameroun, Le Complexe vous accueille
+            dans un écrin de luxe où chaque instant devient souvenir. Des villas tropicales baignées
+            de lumière dorée aux soirées enflammées sous les étoiles, de la gastronomie raffinée aux
+            eaux cristallines de nos piscines — ici, l'excellence africaine s'exprime dans toute sa splendeur.
+            <br><br>
+            Chaque détail a été pensé pour que votre séjour transcende vos attentes. Bienvenue chez vous.
+          </p>
+
+          <a href="hotel.html" class="btn-reserve">Découvrir l'hôtel</a>
+
+          <div class="experience__stats" style="margin-top:var(--sp-lg);">
+            <div class="stat">
+              <span class="stat__number">8+</span>
+              <span class="stat__label">Activités</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number">200+</span>
+              <span class="stat__label">Clients</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number">365</span>
+              <span class="stat__label">Jours par an</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       GALERIE APERÇU
+       ====================================================== -->
+  <section id="galerie" class="gallery">
+    <div class="container">
+
+      <header class="gallery__header fade-in">
+        <span class="eyebrow">Galerie</span>
+        <h2 class="section-title">Un Avant-goût du <em>Paradis</em></h2>
+        <div class="gold-line gold-line--center" style="margin-top:1.5rem;"></div>
+      </header>
+
+      <div class="gallery__grid">
+
+        <div class="gallery__item fade-in" data-delay="0s">
+          <img
+            src="https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=900&q=80"
+            alt="Piscine à débordement"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="gallery__item fade-in" data-delay="0.08s">
+          <img
+            src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=900&q=80"
+            alt="Suite de luxe"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="gallery__item fade-in" data-delay="0.16s">
+          <img
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=80"
+            alt="Restaurant gastronomique"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="gallery__item fade-in" data-delay="0.12s">
+          <img
+            src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=900&q=80"
+            alt="Soirée en boîte de nuit"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="gallery__item fade-in" data-delay="0.2s">
+          <img
+            src="https://images.unsplash.com/photo-1520250497591-112fb674bd3c?w=900&q=80"
+            alt="Vue extérieure du complexe"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="gallery__item fade-in" data-delay="0.28s">
+          <img
+            src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=900&q=80"
+            alt="Activités de loisirs"
+            loading="lazy"
+          />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       CTA FINALE
+       ====================================================== -->
+  <section class="cta-final">
+    <div class="container">
+
+      <div class="fade-in">
+        <span class="eyebrow">Réservation</span>
+
+        <h2 class="cta-final__title">
+          Prêt à Vivre<br>
+          <em>l'Expérience ?</em>
+        </h2>
+
+        <div class="gold-line gold-line--center"></div>
+
+        <p class="cta-final__sub">
+          Réservez dès aujourd'hui et laissez-vous transporter dans un monde
+          de luxe, de sérénité et d'émotions au cœur du Cameroun.
+        </p>
+
+        <div class="cta-final__actions">
+          <a href="hotel.html#reserver" class="btn-reserve btn-reserve--filled">Réserver maintenant</a>
+          <a href="tel:+237600000000" class="btn-outline-ivory">+237 6 00 000 000</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       FOOTER
+       ====================================================== -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer__grid">
+
+        <!-- Colonne marque -->
+        <div>
+          <div class="footer__logo">Le <span>Complexe</span></div>
+          <p class="footer__tagline">
+            L'excellence africaine à son apogée. Un complexe touristique haut de gamme au cœur du Cameroun.
+          </p>
+          <div class="footer__social">
+
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z"/>
+              </svg>
+            </a>
+
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+
+            <a href="#" class="footer__social-link" aria-label="Twitter / X">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Navigation rapide -->
+        <div>
+          <p class="footer__col-title">Navigation</p>
+          <ul class="footer__links">
+            <li><a href="index.html"        class="footer__nav-link">Accueil</a></li>
+            <li><a href="hotel.html"        class="footer__nav-link">Hôtel</a></li>
+            <li><a href="restaurant.html"   class="footer__nav-link">Restaurant</a></li>
+            <li><a href="piscine.html"      class="footer__nav-link">Piscine</a></li>
+            <li><a href="nuit.html"       class="footer__nav-link">Night Club</a></li>
+            <li><a href="loisirs.html"    class="footer__nav-link">Loisirs</a></li>
+          </ul>
+        </div>
+
+        <!-- Informations -->
+        <div>
+          <p class="footer__col-title">Informations</p>
+          <ul class="footer__links">
+            <li><a href="hotel.html#reserver" class="footer__nav-link">Réservation</a></li>
+            <li><a href="piscine.html"         class="footer__nav-link">Tarifs Piscine</a></li>
+            <li><a href="galerie.html"          class="footer__nav-link">Galerie</a></li>
+            <li><a href="contact.html"          class="footer__nav-link">Contact</a></li>
+            <li><a href="#"                    class="footer__nav-link">À propos</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <p class="footer__col-title">Contact</p>
+
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Route de l'Aéroport, Yaoundé<br>Cameroun</span>
+          </div>
+
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+            </svg>
+            <span>+237 6 00 000 000</span>
+          </div>
+
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span>contact@lecomplexe.cm</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 Le Complexe · Tous droits réservés</span>
+        <span>Conçu avec soin au Cameroun</span>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Galerie photo du Complexe — Hôtel, restaurant, piscines, soirées et nature au Cameroun. Découvrez le complexe en images." />
+  <title>Galerie — Le Complexe · Cameroun</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a href="#galerie-principale" class="skip-link">Aller à la galerie</a>
+
+  <!-- ======================================================
+       NAVBAR
+       ====================================================== -->
+  <nav class="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">Le <span>Complexe</span></a>
+
+      <ul class="navbar__nav" role="list">
+        <li><a href="index.html"      class="navbar__link">Accueil</a></li>
+        <li><a href="hotel.html"      class="navbar__link">Hôtel</a></li>
+        <li><a href="restaurant.html" class="navbar__link">Restaurant</a></li>
+        <li><a href="piscine.html"    class="navbar__link">Piscine</a></li>
+        <li><a href="nuit.html"       class="navbar__link">Night Club</a></li>
+        <li><a href="loisirs.html"    class="navbar__link">Loisirs</a></li>
+        <li class="navbar__cta">
+          <a href="hotel.html#reserver" class="btn-reserve">Réserver</a>
+        </li>
+      </ul>
+
+      <button class="navbar__hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- ======================================================
+       HERO MINIMALISTE
+       ====================================================== -->
+  <header class="gallery-page-hero">
+    <div class="container">
+      <span class="eyebrow">Portfolio</span>
+      <h1 class="gallery-page-hero__title">
+        La Galerie du <em>Complexe</em>
+      </h1>
+      <div class="gold-line gold-line--center" style="margin-top:1.5rem;"></div>
+      <p class="gallery-page-hero__sub">
+        Hôtel · Restaurant · Piscine · Soirées · Nature — 22 photos pour vous immerger dans l'univers du Complexe.
+      </p>
+    </div>
+  </header>
+
+
+  <!-- ======================================================
+       FILTRES + GRILLE MASONRY
+       ====================================================== -->
+  <section class="gallery-section" id="galerie-principale">
+    <div class="container">
+
+      <!-- Boutons de filtre -->
+      <nav class="filter-nav" aria-label="Filtrer par catégorie" role="navigation">
+        <button class="filter-btn active" data-filter="all"        type="button">Tout</button>
+        <button class="filter-btn"        data-filter="hotel"      type="button">Hôtel</button>
+        <button class="filter-btn"        data-filter="restaurant" type="button">Restaurant</button>
+        <button class="filter-btn"        data-filter="piscine"    type="button">Piscine</button>
+        <button class="filter-btn"        data-filter="soirees"    type="button">Soirées</button>
+        <button class="filter-btn"        data-filter="nature"     type="button">Nature</button>
+      </nav>
+
+      <!-- Grille masonry -->
+      <div class="gallery-masonry" id="gallery-masonry" role="list">
+
+        <!-- 1 · Hôtel · TALL -->
+        <div class="gallery-masonry__item gallery-masonry__item--tall" data-category="hotel" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1566073771259-470be8979a0c?w=700&q=80"
+            data-full="https://images.unsplash.com/photo-1566073771259-470be8979a0c?w=1920&q=90"
+            alt="Suite panoramique"
+            loading="lazy"
+          />
+          <div class="gallery-masonry__overlay">
+            <span class="gallery-masonry__label">Suite panoramique</span>
+            <span class="gallery-masonry__zoom">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <!-- 2 · Restaurant -->
+        <div class="gallery-masonry__item" data-category="restaurant" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=80"
+            data-full="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=90"
+            alt="Salle du restaurant"
+            loading="lazy"
+          />
+          <div class="gallery-masonry__overlay">
+            <span class="gallery-masonry__label">Salle du restaurant</span>
+            <span class="gallery-masonry__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></span>
+          </div>
+        </div>
+
+        <!-- 3 · Piscine -->
+        <div class="gallery-masonry__item" data-category="piscine" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=700&q=80"
+            data-full="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1920&q=90"
+            alt="Piscine principale"
+            loading="lazy"
+          />
+          <div class="gallery-masonry__overlay">
+            <span class="gallery-masonry__label">Piscine principale</span>
+            <span class="gallery-masonry__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></span>
+          </div>
+        </div>
+
+        <!-- 4 · Nature · WIDE -->
+        <div class="gallery-masonry__item gallery-masonry__item--wide" data-category="nature" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1534430480872-3498386e7856?w=700&q=80"
+            data-full="https://images.unsplash.com/photo-1534430480872-3498386e7856?w=1920&q=90"
+            alt="Végétation tropicale"
+            loading="lazy"
+          />
+          <div class="gallery-masonry__overlay">
+            <span class="gallery-masonry__label">Végétation tropicale</span>
+            <span class="gallery-masonry__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></span>
+          </div>
+        </div>
+
+        <!-- 5 · Hôtel -->
+        <div class="gallery-masonry__item" data-category="hotel" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=700&q=80"
+            data-full="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=1920&q=90"
+            alt="Chambre Supérieure"
+            loading="lazy"
+          />
+          <div class="gallery-masonry__overlay">
+            <span class="gallery-masonry__label">Chambre Supérieure</span>
+            <span class="gallery-masonry__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></span>
+          </div>
+        </div>
+
+        <!-- 6 · Soirées -->
+        <div class="gallery-masonry__item" data-category="soirees" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1571366343168-631c5bcca7a4?w=700&q=80"
+            data-full="https://images.unsplash.com/photo-1571366343168-631c5bcca7a4?w=1920&q=90"
+            alt="DJ en performance"
+            loading="lazy"
+          />
+          <div class="gallery-masonry__overlay">
+            <span class="gallery-masonry__label">DJ en performance</span>
+            <span class="gallery-masonry__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></span>
+          </div>
+        </div>
+
+        <!-- 7 · Restaurant · TALL -->
+        <div class="gallery-masonry__item gallery-masonry__item--tall" data-category="restaurant" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1550966871-21855df23e45?w=700&q=80"
+            data-full="https://images.unsplash.com/photo-1550966871-21855df23e45?w=1920&q=90"
+            alt="Ambiance du restaurant"
+            loading="lazy"
+          />
+          <div class="gallery-masonry__overlay">
+            <span class="gallery-masonry__label">Ambiance du restaurant</span>
+            <span class="gallery-masonry__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></span>
+          </div>
+        </div>
+
+        <!-- 8 · Piscine -->
+        <div class="gallery-masonry__item" data-category="piscine" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=700&q=80"
+            data-full="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=1920&q=90"
+            alt="Piscine au coucher du soleil"
+            loading="lazy"
+          />
+          <div class="gallery-masonry__overlay">
+            <span class="gallery-masonry__label">Piscine au coucher du soleil</span>
+            <span class="gallery-masonry__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></span>
+          </div>
+        </div>
+
+        <!-- 9 · Soirées -->
+        <div class="gallery-masonry__item" data-category="soirees" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=700&q=80"
+            data-full="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1920&q=90"
+            alt="Soirée festive"
+            loading="lazy"
+          />
+          <div class="gallery-masonry__overlay">
+            <span class="gallery-masonry__label">Soirée festive</span>
+            <span class="gallery-masonry__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></span>
+          </div>
+        </div>
+
+        <!-- 10 · Nature -->
+        <div class="gallery-masonry__item" data-category="nature" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=700&q=80"
+            data-full="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1920&q=90"
+            alt="Bassins piscicoles"
+            loading="lazy"
+          />
+          <div class="gallery-masonry__overlay">
+            <span class="gallery-masonry__label">Bassins piscicoles</span>
+            <span class="gallery-masonry__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></span>
+          </div>
+        </div>
+
+        <!-- 11 · Hôtel -->
+        <div class="gallery-masonry__item" data-category="hotel" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=700&q=80"
+            data-full="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1920&q=90"
+            alt="Salle de bain en marbre"
+            loading="lazy"
+          />
+          <div class="gallery-masonry__overlay">
+            <span class="gallery-masonry__label">Salle de bain en marbre</span>
+            <span class="gallery-masonry__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></span>
+          </div>
+        </div>
+
+        <!-- 12 · Piscine -->
+        <div class="gallery-masonry__item" data-category="piscine" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=700&q=80"
+            data-full="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=1920&q=90"
+            alt="Transats en bord de piscine"
+            loading="lazy"
+          />
+          <div class="gallery-masonry__overlay">
+            <span class="gallery-masonry__label">Transats en bord de piscine</span>
+            <span class="gallery-masonry__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></span>
+          </div>
+        </div>
+
+        <!-- 13 · Soirées · TALL -->
+        <div class="gallery-masonry__item gallery-masonry__item--tall" data-category="soirees" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=700&q=80"
+            data-full="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1920&q=90"
+            alt="Concert live"
+            loading="lazy"
+          />
+          <div class="gallery-masonry__overlay">
+            <span class="gallery-masonry__label">Concert live</span>
+            <span class="gallery-masonry__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></span>
+          </div>
+        </div>
+
+        <!-- 14 · Hôtel -->
+        <div class="gallery-masonry__item" data-category="hotel" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=700&q=80"
+            data-full="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=1920&q=90"
+            alt="Suite Présidentielle"
+            loading="lazy"
+          />
+          <div class="gallery-masonry__overlay">
+            <span class="gallery-masonry__label">Suite Présidentielle</span>
+            <span class="gallery-masonry__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></span>
+          </div>
+        </div>
+
+        <!-- 15 · Restaurant · WIDE -->
+        <div class="gallery-masonry__item gallery-masonry__item--wide" data-category="restaurant" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=700&q=80"
+            data-full="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1920&q=90"
+            alt="Plat gastronomique signature"
+            loading="lazy"
+          />
+          <div class="gallery-masonry__overlay">
+            <span class="gallery-masonry__label">Plat signature</span>
+            <span class="gallery-masonry__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></span>
+          </div>
+        </div>
+
+        <!-- 16 · Nature -->
+        <div class="gallery-masonry__item" data-category="nature" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=700&q=80"
+            data-full="https://images.unsplash.com/photo-1448375240586-882707db888b?w=1920&q=90"
+            alt="Forêt tropicale camerounaise"
+            loading="lazy"
+          />
+          <div class="gallery-masonry__overlay">
+            <span class="gallery-masonry__label">Forêt tropicale</span>
+            <span class="gallery-masonry__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></span>
+          </div>
+        </div>
+
+        <!-- 17 · Piscine -->
+        <div class="gallery-masonry__item" data-category="piscine" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=700&q=80"
+            data-full="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=1920&q=90"
+            alt="Vue aérienne des bassins"
+            loading="lazy"
+          />
+          <div class="gallery-masonry__overlay">
+            <span class="gallery-masonry__label">Vue aérienne</span>
+            <span class="gallery-masonry__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></span>
+          </div>
+        </div>
+
+        <!-- 18 · Soirées -->
+        <div class="gallery-masonry__item" data-category="soirees" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=700&q=80"
+            data-full="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1920&q=90"
+            alt="Ambiance nocturne"
+            loading="lazy"
+          />
+          <div class="gallery-masonry__overlay">
+            <span class="gallery-masonry__label">Ambiance nocturne</span>
+            <span class="gallery-masonry__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></span>
+          </div>
+        </div>
+
+        <!-- 19 · Hôtel -->
+        <div class="gallery-masonry__item" data-category="hotel" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=700&q=80"
+            data-full="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=1920&q=90"
+            alt="Chambre de nuit"
+            loading="lazy"
+          />
+          <div class="gallery-masonry__overlay">
+            <span class="gallery-masonry__label">Chambre de nuit</span>
+            <span class="gallery-masonry__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></span>
+          </div>
+        </div>
+
+        <!-- 20 · Nature · TALL -->
+        <div class="gallery-masonry__item gallery-masonry__item--tall" data-category="nature" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=700&q=80"
+            data-full="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=1920&q=90"
+            alt="Activités plein air"
+            loading="lazy"
+          />
+          <div class="gallery-masonry__overlay">
+            <span class="gallery-masonry__label">Activités plein air</span>
+            <span class="gallery-masonry__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></span>
+          </div>
+        </div>
+
+        <!-- 21 · Restaurant -->
+        <div class="gallery-masonry__item" data-category="restaurant" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1484723091739-30e9c4b9a5d5?w=700&q=80"
+            data-full="https://images.unsplash.com/photo-1484723091739-30e9c4b9a5d5?w=1920&q=90"
+            alt="Dessert élaboré"
+            loading="lazy"
+          />
+          <div class="gallery-masonry__overlay">
+            <span class="gallery-masonry__label">Dessert élaboré</span>
+            <span class="gallery-masonry__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></span>
+          </div>
+        </div>
+
+        <!-- 22 · Piscine -->
+        <div class="gallery-masonry__item" data-category="piscine" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1562778612-e1e0cda9915c?w=700&q=80"
+            data-full="https://images.unsplash.com/photo-1562778612-e1e0cda9915c?w=1920&q=90"
+            alt="Jacuzzi extérieur"
+            loading="lazy"
+          />
+          <div class="gallery-masonry__overlay">
+            <span class="gallery-masonry__label">Jacuzzi extérieur</span>
+            <span class="gallery-masonry__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Compteur dynamique -->
+      <p id="gallery-count" style="text-align:center;margin-top:var(--sp-lg);font-size:0.78rem;color:var(--ivory-60);letter-spacing:0.08em;">
+        22 photos
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       LIGHTBOX — Overlay JS natif
+       ====================================================== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visionneuse d'images">
+
+    <img class="lightbox__img" id="lb-img" src="" alt="" />
+
+    <button class="lightbox__close" id="lb-close" aria-label="Fermer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+
+    <button class="lightbox__btn lightbox__btn--prev" id="lb-prev" aria-label="Image précédente">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="15 18 9 12 15 6"/>
+      </svg>
+    </button>
+
+    <button class="lightbox__btn lightbox__btn--next" id="lb-next" aria-label="Image suivante">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="9 18 15 12 9 6"/>
+      </svg>
+    </button>
+
+    <div class="lightbox__footer">
+      <span class="lightbox__caption" id="lb-caption"></span>
+      <span class="lightbox__counter" id="lb-counter"></span>
+    </div>
+
+  </div>
+
+
+  <!-- ======================================================
+       FOOTER
+       ====================================================== -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer__grid">
+        <div>
+          <div class="footer__logo">Le <span>Complexe</span></div>
+          <p class="footer__tagline">L'excellence africaine à son apogée. Complexe touristique haut de gamme au Cameroun.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Twitter / X">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Navigation</p>
+          <ul class="footer__links">
+            <li><a href="index.html"      class="footer__nav-link">Accueil</a></li>
+            <li><a href="hotel.html"      class="footer__nav-link">Hôtel</a></li>
+            <li><a href="restaurant.html" class="footer__nav-link">Restaurant</a></li>
+            <li><a href="piscine.html"    class="footer__nav-link">Piscine</a></li>
+            <li><a href="nuit.html"       class="footer__nav-link">Night Club</a></li>
+            <li><a href="loisirs.html"    class="footer__nav-link">Loisirs</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Galerie</p>
+          <ul class="footer__links">
+            <li><a href="galerie.html"                 class="footer__nav-link">Toutes les photos</a></li>
+            <li><button class="footer__nav-link" style="background:none;border:none;cursor:pointer;padding:0;text-align:left;" onclick="document.querySelector('[data-filter=hotel]').click()">Hôtel</button></li>
+            <li><button class="footer__nav-link" style="background:none;border:none;cursor:pointer;padding:0;text-align:left;" onclick="document.querySelector('[data-filter=restaurant]').click()">Restaurant</button></li>
+            <li><button class="footer__nav-link" style="background:none;border:none;cursor:pointer;padding:0;text-align:left;" onclick="document.querySelector('[data-filter=soirees]').click()">Soirées</button></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Contact</p>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Route de l'Aéroport, Yaoundé<br>Cameroun</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+            </svg>
+            <span>+237 6 00 000 000</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 Le Complexe · Tous droits réservés</span>
+        <span>Conçu avec soin au Cameroun</span>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <script src="main.js"></script>
+
+  <script>
+  (function () {
+    'use strict';
+
+    /* =============================================
+       FILTRES
+       ============================================= */
+    const filterBtns  = document.querySelectorAll('.filter-btn');
+    const allItems    = document.querySelectorAll('.gallery-masonry__item');
+    const countEl     = document.getElementById('gallery-count');
+
+    function updateCount() {
+      const visible = [...allItems].filter(i => !i.classList.contains('hidden')).length;
+      if (countEl) countEl.textContent = visible + ' photo' + (visible > 1 ? 's' : '');
+    }
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.dataset.filter;
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        allItems.forEach(item => {
+          if (filter === 'all' || item.dataset.category === filter) {
+            item.classList.remove('hidden');
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+
+        updateCount();
+        updateVisibleItems();
+      });
+    });
+
+    /* =============================================
+       LIGHTBOX
+       ============================================= */
+    const lightbox  = document.getElementById('lightbox');
+    const lbImg     = document.getElementById('lb-img');
+    const lbCaption = document.getElementById('lb-caption');
+    const lbCounter = document.getElementById('lb-counter');
+    const lbClose   = document.getElementById('lb-close');
+    const lbPrev    = document.getElementById('lb-prev');
+    const lbNext    = document.getElementById('lb-next');
+
+    let currentIdx   = 0;
+    let visibleItems = [];
+
+    function updateVisibleItems() {
+      visibleItems = [...allItems].filter(i => !i.classList.contains('hidden'));
+    }
+    updateVisibleItems();
+
+    function setImage(idx) {
+      const item = visibleItems[idx];
+      if (!item) return;
+      const img  = item.querySelector('img');
+      const full = img.getAttribute('data-full') || img.src;
+
+      lbImg.classList.add('loading');
+      lbCaption.textContent = img.alt;
+      lbCounter.textContent = (idx + 1) + ' / ' + visibleItems.length;
+
+      const loader    = new Image();
+      loader.src      = full;
+      loader.onload   = () => {
+        lbImg.src = full;
+        lbImg.alt = img.alt;
+        lbImg.classList.remove('loading');
+      };
+      /* Affichage immédiat en basse résolution si le chargement tarde */
+      if (loader.complete) {
+        lbImg.src = full;
+        lbImg.classList.remove('loading');
+      }
+    }
+
+    function openLightbox(idx) {
+      currentIdx = idx;
+      setImage(idx);
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      lbImg.focus && lbImg.focus();
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    function showPrev() {
+      currentIdx = (currentIdx - 1 + visibleItems.length) % visibleItems.length;
+      setImage(currentIdx);
+    }
+
+    function showNext() {
+      currentIdx = (currentIdx + 1) % visibleItems.length;
+      setImage(currentIdx);
+    }
+
+    /* Clic sur chaque image */
+    allItems.forEach(item => {
+      item.addEventListener('click', () => {
+        updateVisibleItems();
+        const idx = visibleItems.indexOf(item);
+        if (idx !== -1) openLightbox(idx);
+      });
+    });
+
+    /* Contrôles lightbox */
+    lbClose.addEventListener('click', closeLightbox);
+    lbPrev.addEventListener('click', showPrev);
+    lbNext.addEventListener('click', showNext);
+
+    /* Clic sur le fond → fermer */
+    lightbox.addEventListener('click', e => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    /* Clavier */
+    document.addEventListener('keydown', e => {
+      if (!lightbox.classList.contains('active')) return;
+      if (e.key === 'Escape')     closeLightbox();
+      if (e.key === 'ArrowLeft')  showPrev();
+      if (e.key === 'ArrowRight') showNext();
+    });
+
+    /* Touch swipe */
+    let touchStartX = 0;
+    lightbox.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].clientX; }, { passive: true });
+    lightbox.addEventListener('touchend',   e => {
+      const dx = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(dx) > 50) dx < 0 ? showNext() : showPrev();
+    }, { passive: true });
+
+  })();
+  </script>
+
+</body>
+</html>

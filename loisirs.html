@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Loisirs au Complexe — Pisciculture artisanale, manège et activités plein air au Cameroun. Tarifs, horaires et réservation." />
+  <title>Loisirs — Le Complexe · Cameroun</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* Tons naturels — fond légèrement vert-sombre */
+    :root {
+      --bg-dark:   #090D08;
+      --bg-card:   #0D110C;
+      --bg-subtle: #111510;
+    }
+
+    /* Overlay hero avec teinte verte */
+    .page-hero__overlay {
+      background: linear-gradient(
+        to top,
+        rgba(9,13,8,0.96)  0%,
+        rgba(9,13,8,0.45)  55%,
+        rgba(9,13,8,0.2)   100%
+      );
+    }
+
+    /* Teinte verte subtile sur les sections alternées */
+    .nature-section {
+      background: linear-gradient(180deg, #090D08 0%, #0B0F0A 100%);
+    }
+
+    /* Accent vert très doux sur les bordures */
+    .activity-block { border-color: rgba(120,160,100,0.15); }
+    .activity-block:hover { border-color: rgba(120,160,100,0.25); }
+    .activity-pricing-table { border-color: rgba(120,160,100,0.15); }
+    .activity-pricing-table__head { border-bottom-color: rgba(120,160,100,0.2); }
+    .activity-hours { border-left-color: var(--gold); }
+  </style>
+</head>
+<body>
+
+  <a href="#contact-loisirs" class="skip-link">Aller au contenu principal</a>
+
+  <!-- ======================================================
+       NAVBAR
+       ====================================================== -->
+  <nav class="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">Le <span>Complexe</span></a>
+
+      <ul class="navbar__nav" role="list">
+        <li><a href="index.html"      class="navbar__link">Accueil</a></li>
+        <li><a href="hotel.html"      class="navbar__link">Hôtel</a></li>
+        <li><a href="restaurant.html" class="navbar__link">Restaurant</a></li>
+        <li><a href="piscine.html"    class="navbar__link">Piscine</a></li>
+        <li><a href="nuit.html"       class="navbar__link">Night Club</a></li>
+        <li><a href="loisirs.html"    class="navbar__link active">Loisirs</a></li>
+        <li class="navbar__cta">
+          <a href="#contact-loisirs" class="btn-reserve">Réserver</a>
+        </li>
+      </ul>
+
+      <button class="navbar__hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- ======================================================
+       HERO — Nature & Activités outdoor
+       ====================================================== -->
+  <section class="page-hero">
+    <img
+      src="https://images.unsplash.com/photo-1534430480872-3498386e7856?w=1920&q=90"
+      alt="Nature tropicale du Complexe"
+      class="page-hero__bg"
+      loading="eager"
+      fetchpriority="high"
+      width="1920"
+      height="1080"
+    />
+    <div class="page-hero__overlay"></div>
+
+    <div class="page-hero__content">
+      <div class="container">
+        <span class="eyebrow">Nature &amp; Découverte</span>
+        <h1 class="page-hero__title">
+          Loisirs &amp;<br>
+          <em>Grand Air</em>
+        </h1>
+        <p class="page-hero__sub">
+          Pisciculture artisanale, manège familial et activités nature — des expériences pour tous les âges, au cœur du Cameroun.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       INTRO — Présentation des loisirs
+       ====================================================== -->
+  <section style="padding:var(--sp-xxl) 0;">
+    <div class="container">
+      <div style="max-width:800px;margin:0 auto;text-align:center;" class="fade-in">
+        <span class="eyebrow">Au programme</span>
+        <h2 class="section-title">Deux <em>Univers</em> à Explorer</h2>
+        <div class="gold-line gold-line--center" style="margin-top:1.5rem;margin-bottom:var(--sp-lg);"></div>
+        <p style="font-size:clamp(0.95rem,1.5vw,1.1rem);color:var(--ivory-60);line-height:1.9;">
+          Entre la sérénité des bassins piscicoles où se dévoile le cycle de la vie aquatique, et la joie du manège familial sous les étoiles tropicales — Le Complexe offre une parenthèse d'émerveillement pour chaque membre de votre famille.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       ACTIVITÉS CÔTE À CÔTE — Pisciculture | Manège
+       ====================================================== -->
+  <section class="activities-split nature-section" id="activites">
+    <div class="container">
+
+      <div class="activities-grid">
+
+        <!-- PISCICULTURE -->
+        <article class="activity-block fade-in" data-delay="0s">
+          <div class="activity-block__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=900&q=85"
+              alt="Bassins de pisciculture du Complexe"
+              loading="lazy"
+            />
+          </div>
+          <div class="activity-block__body">
+
+            <span class="activity-block__eyebrow">Aquaculture artisanale</span>
+            <h2 class="activity-block__title">Pisciculture</h2>
+            <p class="activity-block__text">
+              Plongez dans le fascinant monde de l'aquaculture camerounaise. Visitez nos bassins où poissons-chats, tilapias et carpes évoluent dans un environnement naturel préservé. Une expérience pédagogique unique, de l'éclosion à la table.
+            </p>
+
+            <div class="activity-pricing-table" aria-label="Tarifs pisciculture">
+              <div class="activity-pricing-table__head">
+                <span>Prestation</span>
+                <span>Tarif</span>
+              </div>
+
+              <div class="activity-price-row">
+                <div>
+                  <span class="activity-price-row__label">Visite guidée des bassins</span>
+                  <span class="activity-price-row__sub">Min. 5 personnes · ~45 min</span>
+                </div>
+                <span class="activity-price-row__price">2 500 FCFA</span>
+              </div>
+
+              <div class="activity-price-row">
+                <div>
+                  <span class="activity-price-row__label">Pêche guidée</span>
+                  <span class="activity-price-row__sub">Matériel fourni · 30 min</span>
+                </div>
+                <span class="activity-price-row__price">5 000 FCFA</span>
+              </div>
+
+              <div class="activity-price-row">
+                <div>
+                  <span class="activity-price-row__label">Dégustation sur place</span>
+                  <span class="activity-price-row__sub">Poisson grillé, sauce locale</span>
+                </div>
+                <span class="activity-price-row__price">3 500 FCFA</span>
+              </div>
+
+              <div class="activity-price-row">
+                <div>
+                  <span class="activity-price-row__label">Achat poissons frais</span>
+                  <span class="activity-price-row__sub">Tilapia · Poisson-chat · Carpe</span>
+                </div>
+                <span class="activity-price-row__price">Prix marché</span>
+              </div>
+
+              <div class="activity-price-row">
+                <div>
+                  <span class="activity-price-row__label">Pack famille (visite + pêche)</span>
+                  <span class="activity-price-row__sub">2 adultes + 2 enfants</span>
+                </div>
+                <span class="activity-price-row__price">18 000 FCFA</span>
+              </div>
+
+            </div>
+
+            <div class="activity-hours">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+              Ouvert tous les jours · 8h00 – 17h00 · Réservation conseillée
+            </div>
+
+            <a href="#contact-loisirs" class="btn-reserve" style="margin-top:var(--sp-lg);align-self:flex-start;">
+              Réserver une visite
+            </a>
+
+          </div>
+        </article>
+
+        <!-- MANÈGE -->
+        <article class="activity-block fade-in" data-delay="0.12s">
+          <div class="activity-block__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=900&q=85"
+              alt="Manège familial du Complexe"
+              loading="lazy"
+            />
+          </div>
+          <div class="activity-block__body">
+
+            <span class="activity-block__eyebrow">Attractions familiales</span>
+            <h2 class="activity-block__title">Manège</h2>
+            <p class="activity-block__text">
+              Le plaisir à l'état pur pour petits et grands ! Notre manège tropical, installé dans un cadre naturel époustouflant, fait tourner les rires et les souvenirs depuis l'ouverture du Complexe. Un incontournable pour les familles.
+            </p>
+
+            <div class="activity-pricing-table" aria-label="Tarifs manège">
+              <div class="activity-pricing-table__head">
+                <span>Tarif</span>
+                <span>Prix / tour</span>
+              </div>
+
+              <div class="activity-price-row">
+                <div>
+                  <span class="activity-price-row__label">Enfants — de 12 ans</span>
+                  <span class="activity-price-row__sub">15 minutes par tour</span>
+                </div>
+                <span class="activity-price-row__price">1 000 FCFA</span>
+              </div>
+
+              <div class="activity-price-row">
+                <div>
+                  <span class="activity-price-row__label">Adolescents 12–17 ans</span>
+                  <span class="activity-price-row__sub">15 minutes par tour</span>
+                </div>
+                <span class="activity-price-row__price">1 500 FCFA</span>
+              </div>
+
+              <div class="activity-price-row">
+                <div>
+                  <span class="activity-price-row__label">Adultes</span>
+                  <span class="activity-price-row__sub">15 minutes par tour</span>
+                </div>
+                <span class="activity-price-row__price">2 000 FCFA</span>
+              </div>
+
+              <div class="activity-price-row">
+                <div>
+                  <span class="activity-price-row__label">Pass journée — Enfant</span>
+                  <span class="activity-price-row__sub">Tours illimités de 9h à 19h</span>
+                </div>
+                <span class="activity-price-row__price">8 000 FCFA</span>
+              </div>
+
+              <div class="activity-price-row">
+                <div>
+                  <span class="activity-price-row__label">Forfait famille</span>
+                  <span class="activity-price-row__sub">2 adultes + 2 enfants · pass journée</span>
+                </div>
+                <span class="activity-price-row__price">18 000 FCFA</span>
+              </div>
+
+            </div>
+
+            <div class="activity-hours">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+              Ouvert tous les jours · 9h00 – 20h00 · Sans réservation
+            </div>
+
+            <a href="#contact-loisirs" class="btn-reserve" style="margin-top:var(--sp-lg);align-self:flex-start;">
+              Forfait famille
+            </a>
+
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       GALERIE ACTIVITÉS
+       ====================================================== -->
+  <section class="gallery" style="background:var(--bg-dark);">
+    <div class="container">
+
+      <header class="gallery__header fade-in">
+        <span class="eyebrow">Galerie</span>
+        <h2 class="section-title">La Nature <em>en Direct</em></h2>
+        <div class="gold-line gold-line--center" style="margin-top:1.5rem;"></div>
+      </header>
+
+      <div class="gallery__grid">
+
+        <div class="gallery__item fade-in" data-delay="0s">
+          <img
+            src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=900&q=85"
+            alt="Bassins piscicoles"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="gallery__item fade-in" data-delay="0.08s">
+          <img
+            src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=900&q=85"
+            alt="Activités en plein air"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="gallery__item fade-in" data-delay="0.16s">
+          <img
+            src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=900&q=85"
+            alt="Manège familial"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="gallery__item fade-in" data-delay="0.1s">
+          <img
+            src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=900&q=85"
+            alt="Nature tropicale camerounaise"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="gallery__item fade-in" data-delay="0.18s">
+          <img
+            src="https://images.unsplash.com/photo-1484723091739-30e9c4b9a5d5?w=900&q=85"
+            alt="Dégustation produits frais"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="gallery__item fade-in" data-delay="0.26s">
+          <img
+            src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=900&q=85"
+            alt="Faune aquatique"
+            loading="lazy"
+          />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       CTA — CONTACT & RÉSERVATION
+       ====================================================== -->
+  <section class="booking-section" id="contact-loisirs">
+    <div class="container">
+      <div class="booking-inner">
+
+        <!-- Info gauche -->
+        <div class="fade-in">
+          <span class="eyebrow">Réservation</span>
+          <h2 class="section-title">Préparez<br>Votre <em>Visite</em></h2>
+          <div class="gold-line" style="margin-top:1.5rem;"></div>
+
+          <p class="booking-info__text">
+            Que vous souhaitiez organiser une visite scolaire, un après-midi famille ou une journée découverte nature, notre équipe est à votre écoute pour personnaliser votre expérience.
+          </p>
+
+          <div class="booking-perks">
+            <div class="booking-perk">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Groupes scolaires bienvenus
+            </div>
+            <div class="booking-perk">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Packages familles sur mesure
+            </div>
+            <div class="booking-perk">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Guides naturalistes disponibles
+            </div>
+            <div class="booking-perk">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Combiné pisciculture + manège possible
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulaire droite -->
+        <div class="fade-in" data-delay="0.15s">
+          <div class="booking-form">
+
+            <h3 class="booking-form__title">Votre Réservation</h3>
+
+            <div id="loisirs-form-wrap">
+              <form id="loisirs-form" novalidate>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="l-nom">Nom ou groupe</label>
+                    <input class="form-input" type="text" id="l-nom" name="nom" placeholder="Famille Dupont / École XYZ" required />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="l-tel">Téléphone</label>
+                    <input class="form-input" type="tel" id="l-tel" name="tel" placeholder="+237 6 00 000 000" required />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="l-date">Date souhaitée</label>
+                    <input class="form-input" type="date" id="l-date" name="date" required />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="l-activite">Activité</label>
+                    <select class="form-select" id="l-activite" name="activite" required>
+                      <option value="" disabled selected>Choisir</option>
+                      <option value="pisciculture">Pisciculture — visite guidée</option>
+                      <option value="peche">Pêche guidée</option>
+                      <option value="degustation">Dégustation sur place</option>
+                      <option value="manege">Manège — pass journée</option>
+                      <option value="famille">Pack famille (tout inclus)</option>
+                      <option value="scolaire">Visite scolaire</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="l-adultes">Adultes</label>
+                    <select class="form-select" id="l-adultes" name="adultes">
+                      <option value="1">1 adulte</option>
+                      <option value="2" selected>2 adultes</option>
+                      <option value="3">3 adultes</option>
+                      <option value="4">4 adultes</option>
+                      <option value="5+">5+ adultes</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="l-enfants">Enfants</label>
+                    <select class="form-select" id="l-enfants" name="enfants">
+                      <option value="0">Aucun enfant</option>
+                      <option value="1">1 enfant</option>
+                      <option value="2" selected>2 enfants</option>
+                      <option value="3">3 enfants</option>
+                      <option value="4+">4+ enfants</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group" style="margin-bottom:var(--sp-sm);">
+                  <label class="form-label" for="l-message">Informations complémentaires <span style="opacity:.5;font-size:.9em;">(facultatif)</span></label>
+                  <textarea class="form-textarea" id="l-message" name="message" placeholder="Ex : groupe scolaire de 30 élèves, enfants en bas âge, besoins particuliers..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-reserve btn-reserve--filled">
+                  Confirmer la réservation
+                </button>
+
+                <p class="form-note">
+                  Réponse sous 24h · Paiement sur place · Annulation libre
+                </p>
+
+              </form>
+            </div>
+
+            <div class="form-success" id="loisirs-success" aria-live="polite">
+              <svg class="form-success__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+              <h3 class="form-success__title">Réservation confirmée !</h3>
+              <p class="form-success__text">
+                Merci ! Notre équipe vous contactera sous 24 heures pour finaliser les détails. À très bientôt au cœur de la nature camerounaise !
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       FOOTER
+       ====================================================== -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer__grid">
+        <div>
+          <div class="footer__logo">Le <span>Complexe</span></div>
+          <p class="footer__tagline">L'excellence africaine à son apogée. Complexe touristique haut de gamme au Cameroun.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Twitter / X">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Navigation</p>
+          <ul class="footer__links">
+            <li><a href="index.html"      class="footer__nav-link">Accueil</a></li>
+            <li><a href="hotel.html"      class="footer__nav-link">Hôtel</a></li>
+            <li><a href="restaurant.html" class="footer__nav-link">Restaurant</a></li>
+            <li><a href="piscine.html"    class="footer__nav-link">Piscine</a></li>
+            <li><a href="nuit.html"       class="footer__nav-link">Night Club</a></li>
+            <li><a href="loisirs.html"    class="footer__nav-link">Loisirs</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Les Loisirs</p>
+          <ul class="footer__links">
+            <li><a href="#activites"      class="footer__nav-link">Pisciculture</a></li>
+            <li><a href="#activites"      class="footer__nav-link">Manège familial</a></li>
+            <li><a href="#contact-loisirs" class="footer__nav-link">Groupes &amp; scolaires</a></li>
+            <li><a href="#contact-loisirs" class="footer__nav-link">Pack famille</a></li>
+            <li><a href="#"              class="footer__nav-link">Activités à venir</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Contact</p>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+            </svg>
+            <span>Ouvert tous les jours<br>8h00 – 20h00</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+            </svg>
+            <span>+237 6 00 000 000</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 Le Complexe · Tous droits réservés</span>
+        <span>Conçu avec soin au Cameroun</span>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <script src="main.js"></script>
+
+  <script>
+    (function () {
+      const today = new Date().toISOString().split('T')[0];
+      const dateInput = document.getElementById('l-date');
+      if (dateInput) dateInput.min = today;
+
+      const form    = document.getElementById('loisirs-form');
+      const wrap    = document.getElementById('loisirs-form-wrap');
+      const success = document.getElementById('loisirs-success');
+
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          wrap.style.transition = 'opacity 0.3s ease';
+          wrap.style.opacity = '0';
+          wrap.style.pointerEvents = 'none';
+          setTimeout(() => {
+            wrap.style.display = 'none';
+            success.classList.add('visible');
+          }, 320);
+        });
+      }
+    })();
+  </script>
+
+</body>
+</html>

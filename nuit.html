@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Night Club Le Complexe — Soirées, bar VIP et événements exclusifs au Cameroun. Programme des soirées et réservation de tables VIP." />
+  <title>Night Club — Le Complexe · Cameroun</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* Ambiance nightclub — variations sombres et dorées */
+    .hero__overlay {
+      background: linear-gradient(
+        175deg,
+        rgba(5,3,2,0.6)  0%,
+        rgba(5,3,2,0.25) 45%,
+        rgba(5,3,2,0.88) 100%
+      );
+    }
+
+    .events-section { background: #050302; }
+
+    .vip-section {
+      background: radial-gradient(ellipse 1000px 500px at 50% 0%,
+        rgba(201,169,110,0.07) 0%, transparent 60%),
+        #050302;
+    }
+
+    /* Glow sur les titres hero */
+    .nuit-hero-title em {
+      text-shadow: 0 0 60px rgba(201,169,110,0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#programme" class="skip-link">Aller au contenu principal</a>
+
+  <!-- ======================================================
+       NAVBAR
+       ====================================================== -->
+  <nav class="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">Le <span>Complexe</span></a>
+
+      <ul class="navbar__nav" role="list">
+        <li><a href="index.html"      class="navbar__link">Accueil</a></li>
+        <li><a href="hotel.html"      class="navbar__link">Hôtel</a></li>
+        <li><a href="restaurant.html" class="navbar__link">Restaurant</a></li>
+        <li><a href="piscine.html"    class="navbar__link">Piscine</a></li>
+        <li><a href="nuit.html"       class="navbar__link active">Night Club</a></li>
+        <li><a href="loisirs.html"    class="navbar__link">Loisirs</a></li>
+        <li class="navbar__cta">
+          <a href="#reserver-vip" class="btn-reserve">Réserver</a>
+        </li>
+      </ul>
+
+      <button class="navbar__hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- ======================================================
+       HERO — Soirée festive, très sombre
+       ====================================================== -->
+  <section class="hero">
+    <img
+      src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1920&q=90"
+      alt="Soirée au Night Club du Complexe"
+      class="hero__bg"
+      loading="eager"
+      fetchpriority="high"
+      width="1920"
+      height="1080"
+    />
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">Night Club &amp; Bar</p>
+      <h1 class="hero__title nuit-hero-title">
+        La Nuit<br>
+        Commence <em>Ici</em>
+      </h1>
+      <p class="hero__subtitle">
+        Musique, lumières et cocktails d'exception — les soirées du Complexe sont une légende.
+      </p>
+      <div class="hero__ctas">
+        <a href="#programme" class="btn-outline-ivory">Voir le programme</a>
+        <a href="#reserver-vip" class="btn-reserve btn-reserve--filled">Table VIP</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <div class="hero__scroll-line"></div>
+      <span>Défiler</span>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       PROGRAMME DES SOIRÉES
+       ====================================================== -->
+  <section class="events-section" id="programme">
+    <div class="container">
+
+      <header class="events-section__header fade-in">
+        <span class="eyebrow">Agenda</span>
+        <h2 class="section-title">Programme de <em>Juin</em></h2>
+        <div class="gold-line gold-line--center" style="margin-top:1.5rem;"></div>
+      </header>
+
+      <div class="event-schedule fade-in">
+
+        <div class="event-item">
+          <div class="event-item__date">
+            <span class="event-item__day">06</span>
+            <span class="event-item__dayname">Ven · Juin</span>
+          </div>
+          <div>
+            <p class="event-item__theme">Afrobeats Night</p>
+            <p class="event-item__dj">DJ Mama Africa</p>
+          </div>
+          <div class="event-item__right">
+            <span class="event-tag">Ouvert</span>
+            <span class="event-item__entry">Entrée libre</span>
+          </div>
+        </div>
+
+        <div class="event-item">
+          <div class="event-item__date">
+            <span class="event-item__day">07</span>
+            <span class="event-item__dayname">Sam · Juin</span>
+          </div>
+          <div>
+            <p class="event-item__theme">Latin Fever</p>
+            <p class="event-item__dj">DJ Carlos × DJ Soleil</p>
+          </div>
+          <div class="event-item__right">
+            <span class="event-tag">Ouvert</span>
+            <span class="event-item__entry">5 000 FCFA</span>
+          </div>
+        </div>
+
+        <div class="event-item">
+          <div class="event-item__date">
+            <span class="event-item__day">13</span>
+            <span class="event-item__dayname">Ven · Juin</span>
+          </div>
+          <div>
+            <p class="event-item__theme">R&amp;B &amp; Hip-Hop All Night</p>
+            <p class="event-item__dj">DJ Flex</p>
+          </div>
+          <div class="event-item__right">
+            <span class="event-tag">Ouvert</span>
+            <span class="event-item__entry">Entrée libre</span>
+          </div>
+        </div>
+
+        <div class="event-item">
+          <div class="event-item__date">
+            <span class="event-item__day">14</span>
+            <span class="event-item__dayname">Sam · Juin</span>
+          </div>
+          <div>
+            <p class="event-item__theme">Gala — Club Privé</p>
+            <p class="event-item__dj">DJ Master × Live Band</p>
+          </div>
+          <div class="event-item__right">
+            <span class="event-tag event-tag--outline">Exclusif</span>
+            <span class="event-item__entry">Sur invitation</span>
+          </div>
+        </div>
+
+        <div class="event-item">
+          <div class="event-item__date">
+            <span class="event-item__day">20</span>
+            <span class="event-item__dayname">Ven · Juin</span>
+          </div>
+          <div>
+            <p class="event-item__theme">Afro Urban Night</p>
+            <p class="event-item__dj">DJ Krystal</p>
+          </div>
+          <div class="event-item__right">
+            <span class="event-tag">Ouvert</span>
+            <span class="event-item__entry">Entrée libre</span>
+          </div>
+        </div>
+
+        <div class="event-item">
+          <div class="event-item__date">
+            <span class="event-item__day">21</span>
+            <span class="event-item__dayname">Sam · Juin</span>
+          </div>
+          <div>
+            <p class="event-item__theme">Années 90 — Nostalgie</p>
+            <p class="event-item__dj">DJ Vintage</p>
+          </div>
+          <div class="event-item__right">
+            <span class="event-tag">Ouvert</span>
+            <span class="event-item__entry">3 000 FCFA</span>
+          </div>
+        </div>
+
+      </div>
+
+      <p style="text-align:center;margin-top:var(--sp-lg);font-size:0.78rem;color:var(--ivory-60);letter-spacing:0.06em;">
+        Le programme est susceptible d'évoluer · Ouverture à 22h00 · Fermeture à 4h00
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       TARIFS VIP — 3 formules
+       ====================================================== -->
+  <section class="vip-section pricing-section">
+    <div class="container">
+
+      <header class="pricing-section__header fade-in">
+        <span class="eyebrow">Expérience VIP</span>
+        <h2 class="section-title">Formules <em>Exclusives</em></h2>
+        <div class="gold-line gold-line--center" style="margin-top:1.5rem;"></div>
+        <p style="margin-top:var(--sp-md);font-size:0.95rem;color:var(--ivory-60);max-width:560px;margin-left:auto;margin-right:auto;line-height:1.8;">
+          Tables premium, service dédié et bouteilles de prestige — vivez la nuit autrement.
+        </p>
+      </header>
+
+      <div class="pricing-grid">
+
+        <!-- Duo VIP -->
+        <article class="pricing-card fade-in" data-delay="0s">
+          <svg class="pricing-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+          </svg>
+          <h3 class="pricing-card__name">Duo VIP</h3>
+          <p class="pricing-card__hours">2 personnes · Table premium</p>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount">50 000</span>
+            <span class="pricing-card__currency">FCFA / soirée</span>
+          </div>
+          <ul class="pricing-card__features">
+            <li class="pricing-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Table réservée en zone VIP
+            </li>
+            <li class="pricing-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              1 bouteille champagne brut
+            </li>
+            <li class="pricing-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Plateau de fruits offert
+            </li>
+            <li class="pricing-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Entrée prioritaire
+            </li>
+            <li class="pricing-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Service table dédié
+            </li>
+          </ul>
+          <a href="#reserver-vip" class="btn-reserve">Réserver</a>
+        </article>
+
+        <!-- Gold VIP — Featured -->
+        <article class="pricing-card pricing-card--featured fade-in" data-delay="0.1s">
+          <svg class="pricing-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+          <h3 class="pricing-card__name">Gold VIP</h3>
+          <p class="pricing-card__hours">6 personnes · Lounge privé</p>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount">120 000</span>
+            <span class="pricing-card__currency">FCFA / soirée</span>
+          </div>
+          <ul class="pricing-card__features">
+            <li class="pricing-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Espace lounge VIP exclusif
+            </li>
+            <li class="pricing-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              2 bouteilles premium (sélection)
+            </li>
+            <li class="pricing-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Tapas &amp; plateau prestige
+            </li>
+            <li class="pricing-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Accès entrée VIP directe
+            </li>
+            <li class="pricing-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Hôtesse dédiée toute la soirée
+            </li>
+          </ul>
+          <a href="#reserver-vip" class="btn-reserve btn-reserve--filled">Réserver</a>
+        </article>
+
+        <!-- Prestige VIP -->
+        <article class="pricing-card fade-in" data-delay="0.2s">
+          <svg class="pricing-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+          <h3 class="pricing-card__name">Prestige VIP</h3>
+          <p class="pricing-card__hours">10 personnes · Espace privatif</p>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount">200 000</span>
+            <span class="pricing-card__currency">FCFA / soirée</span>
+          </div>
+          <ul class="pricing-card__features">
+            <li class="pricing-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Salon privatif avec vue sur scène
+            </li>
+            <li class="pricing-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Open bar sélection prestige
+            </li>
+            <li class="pricing-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Dîner gastronomique inclus
+            </li>
+            <li class="pricing-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Accueil personnalisé &amp; voiturier
+            </li>
+            <li class="pricing-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Rencontre DJ possible
+            </li>
+          </ul>
+          <a href="#reserver-vip" class="btn-reserve">Réserver</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       GALERIE SOIRÉES
+       ====================================================== -->
+  <section class="gallery" style="background:#050302;">
+    <div class="container">
+
+      <header class="gallery__header fade-in">
+        <span class="eyebrow">L'Ambiance</span>
+        <h2 class="section-title">Nos Soirées en <em>Images</em></h2>
+        <div class="gold-line gold-line--center" style="margin-top:1.5rem;"></div>
+      </header>
+
+      <div class="gallery__grid">
+
+        <div class="gallery__item fade-in" data-delay="0s">
+          <img
+            src="https://images.unsplash.com/photo-1571366343168-631c5bcca7a4?w=900&q=85"
+            alt="DJ en performance"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="gallery__item fade-in" data-delay="0.08s">
+          <img
+            src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=900&q=85"
+            alt="Concert et soirée festive"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="gallery__item fade-in" data-delay="0.16s">
+          <img
+            src="https://images.unsplash.com/photo-1574023073897-1d05e867b86b?w=900&q=85"
+            alt="Intérieur du night club"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="gallery__item fade-in" data-delay="0.1s">
+          <img
+            src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=900&q=85"
+            alt="Atmosphère de soirée"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="gallery__item fade-in" data-delay="0.18s">
+          <img
+            src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=900&q=85"
+            alt="Foule en soirée"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="gallery__item fade-in" data-delay="0.26s">
+          <img
+            src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=900&q=85"
+            alt="Table VIP en soirée"
+            loading="lazy"
+          />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       CTA — RÉSERVER UNE TABLE VIP
+       ====================================================== -->
+  <section class="booking-section" id="reserver-vip" style="background:#050302;">
+    <div class="container">
+      <div class="booking-inner">
+
+        <!-- Info gauche -->
+        <div class="fade-in">
+          <span class="eyebrow">Réservation VIP</span>
+          <h2 class="section-title">Réservez<br>Votre <em>Table</em></h2>
+          <div class="gold-line" style="margin-top:1.5rem;"></div>
+
+          <p class="booking-info__text">
+            Garantissez votre espace pour une soirée exceptionnelle. Notre équipe VIP s'occupe de tout — de votre arrivée à votre départ.
+          </p>
+
+          <div class="booking-perks">
+            <div class="booking-perk">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Confirmation sous 2 heures
+            </div>
+            <div class="booking-perk">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Accueil personnalisé à l'entrée
+            </div>
+            <div class="booking-perk">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Personnalisation de la décoration
+            </div>
+            <div class="booking-perk">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Service voiturier inclus
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulaire droite -->
+        <div class="fade-in" data-delay="0.15s">
+          <div class="booking-form">
+
+            <h3 class="booking-form__title">Votre Table VIP</h3>
+
+            <div id="vip-form-wrap">
+              <form id="vip-form" novalidate>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="v-nom">Nom</label>
+                    <input class="form-input" type="text" id="v-nom" name="nom" placeholder="Jean Dupont" required />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="v-tel">Téléphone</label>
+                    <input class="form-input" type="tel" id="v-tel" name="tel" placeholder="+237 6 00 000 000" required />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="v-date">Date de la soirée</label>
+                    <input class="form-input" type="date" id="v-date" name="date" required />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="v-formule">Formule VIP</label>
+                    <select class="form-select" id="v-formule" name="formule" required>
+                      <option value="" disabled selected>Choisir</option>
+                      <option value="duo">Duo VIP — 50 000 FCFA (2 pers.)</option>
+                      <option value="gold">Gold VIP — 120 000 FCFA (6 pers.)</option>
+                      <option value="prestige">Prestige VIP — 200 000 FCFA (10 pers.)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="v-personnes">Nombre de personnes</label>
+                    <select class="form-select" id="v-personnes" name="personnes">
+                      <option value="2" selected>2 personnes</option>
+                      <option value="3">3 personnes</option>
+                      <option value="4">4 personnes</option>
+                      <option value="5">5 personnes</option>
+                      <option value="6">6 personnes</option>
+                      <option value="8">7–8 personnes</option>
+                      <option value="10">9–10 personnes</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="v-occasion">Occasion <span style="opacity:.5;font-size:.9em;">(facultatif)</span></label>
+                    <select class="form-select" id="v-occasion" name="occasion">
+                      <option value="">Aucune en particulier</option>
+                      <option value="anniversaire">Anniversaire</option>
+                      <option value="enterrement">Enterrement de vie</option>
+                      <option value="business">Soirée d'affaires</option>
+                      <option value="autre">Autre célébration</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group" style="margin-bottom:var(--sp-sm);">
+                  <label class="form-label" for="v-message">Demandes spéciales <span style="opacity:.5;font-size:.9em;">(décoration, bouteilles...)</span></label>
+                  <textarea class="form-textarea" id="v-message" name="message" placeholder="Ex : anniversaire surprise, bouteille de champagne rosé, ambiance particulière..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-reserve btn-reserve--filled">
+                  Confirmer la table VIP
+                </button>
+
+                <p class="form-note">
+                  Acompte de 30 % requis · Confirmation sous 2h · Annulation 48h avant
+                </p>
+
+              </form>
+            </div>
+
+            <div class="form-success" id="vip-success" aria-live="polite">
+              <svg class="form-success__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+              <h3 class="form-success__title">Table réservée !</h3>
+              <p class="form-success__text">
+                Votre table VIP est en cours de confirmation. Notre équipe vous contactera dans les 2 heures. La nuit s'annonce inoubliable.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       FOOTER
+       ====================================================== -->
+  <footer class="footer" style="background:#030201;">
+    <div class="container">
+
+      <div class="footer__grid">
+        <div>
+          <div class="footer__logo">Le <span>Complexe</span></div>
+          <p class="footer__tagline">L'excellence africaine à son apogée. Complexe touristique haut de gamme au Cameroun.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Twitter / X">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Navigation</p>
+          <ul class="footer__links">
+            <li><a href="index.html"      class="footer__nav-link">Accueil</a></li>
+            <li><a href="hotel.html"      class="footer__nav-link">Hôtel</a></li>
+            <li><a href="restaurant.html" class="footer__nav-link">Restaurant</a></li>
+            <li><a href="piscine.html"    class="footer__nav-link">Piscine</a></li>
+            <li><a href="nuit.html"       class="footer__nav-link">Night Club</a></li>
+            <li><a href="loisirs.html"    class="footer__nav-link">Loisirs</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Night Club</p>
+          <ul class="footer__links">
+            <li><a href="#programme"    class="footer__nav-link">Programme du mois</a></li>
+            <li><a href="#reserver-vip" class="footer__nav-link">Table Duo VIP</a></li>
+            <li><a href="#reserver-vip" class="footer__nav-link">Table Gold VIP</a></li>
+            <li><a href="#reserver-vip" class="footer__nav-link">Table Prestige VIP</a></li>
+            <li><a href="#"             class="footer__nav-link">Bar &amp; cocktails</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Contact</p>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+            </svg>
+            <span>Ouvert Ven &amp; Sam · 22h00–4h00<br>Événements spéciaux sur agenda</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+            </svg>
+            <span>+237 6 00 000 000</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 Le Complexe · Tous droits réservés</span>
+        <span>Conçu avec soin au Cameroun</span>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <script src="main.js"></script>
+
+  <script>
+    (function () {
+      const today = new Date().toISOString().split('T')[0];
+      const dateInput = document.getElementById('v-date');
+      if (dateInput) dateInput.min = today;
+
+      const form    = document.getElementById('vip-form');
+      const wrap    = document.getElementById('vip-form-wrap');
+      const success = document.getElementById('vip-success');
+
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          wrap.style.transition = 'opacity 0.3s ease';
+          wrap.style.opacity = '0';
+          wrap.style.pointerEvents = 'none';
+          setTimeout(() => {
+            wrap.style.display = 'none';
+            success.classList.add('visible');
+          }, 320);
+        });
+      }
+    })();
+  </script>
+
+</body>
+</html>

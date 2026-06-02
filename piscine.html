@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Piscines du Complexe — Piscine à débordement et bassin naturel aux eaux turquoise au Cameroun. Tarifs, horaires et réservation de créneau." />
+  <title>Piscine — Le Complexe · Cameroun</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a href="#reserver-creneau" class="skip-link">Aller au contenu principal</a>
+
+  <!-- ======================================================
+       NAVBAR
+       ====================================================== -->
+  <nav class="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">Le <span>Complexe</span></a>
+
+      <ul class="navbar__nav" role="list">
+        <li><a href="index.html"        class="navbar__link">Accueil</a></li>
+        <li><a href="hotel.html"        class="navbar__link">Hôtel</a></li>
+        <li><a href="restaurant.html"   class="navbar__link">Restaurant</a></li>
+        <li><a href="piscine.html"      class="navbar__link active">Piscine</a></li>
+        <li><a href="nuit.html"    class="navbar__link">Night Club</a></li>
+        <li><a href="loisirs.html" class="navbar__link">Loisirs</a></li>
+        <li class="navbar__cta">
+          <a href="#reserver-creneau" class="btn-reserve">Réserver</a>
+        </li>
+      </ul>
+
+      <button class="navbar__hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- ======================================================
+       HERO — Eau turquoise et ciel
+       ====================================================== -->
+  <section class="page-hero">
+    <img
+      src="https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=1920&q=90"
+      alt="Piscine à débordement du Complexe"
+      class="page-hero__bg"
+      loading="eager"
+      fetchpriority="high"
+      width="1920"
+      height="1080"
+      style="object-position: center 70%;"
+    />
+    <div class="page-hero__overlay"></div>
+
+    <div class="page-hero__content">
+      <div class="container">
+        <span class="eyebrow">Piscines &amp; Bassins</span>
+        <h1 class="page-hero__title">
+          Les Eaux <em>Turquoise</em><br>
+          du Complexe
+        </h1>
+        <p class="page-hero__sub">
+          Piscine à débordement, bassin naturel, jacuzzis — une invitation à la flottaison sous le soleil camerounais.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       TARIFS D'ACCÈS — 3 cards
+       ====================================================== -->
+  <section class="pricing-section">
+    <div class="container">
+
+      <header class="pricing-section__header fade-in">
+        <span class="eyebrow">Accès</span>
+        <h2 class="section-title">Nos <em>Tarifs</em></h2>
+        <div class="gold-line gold-line--center" style="margin-top:1.5rem;"></div>
+      </header>
+
+      <div class="pricing-grid">
+
+        <!-- Journée complète -->
+        <article class="pricing-card fade-in" data-delay="0s">
+          <svg class="pricing-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <h3 class="pricing-card__name">Journée complète</h3>
+          <p class="pricing-card__hours">8h00 — 20h00</p>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount">10 000</span>
+            <span class="pricing-card__currency">FCFA / personne</span>
+          </div>
+          <ul class="pricing-card__features">
+            <li class="pricing-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Accès piscine principale
+            </li>
+            <li class="pricing-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Accès bassin naturel
+            </li>
+            <li class="pricing-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Transat &amp; parasol inclus
+            </li>
+            <li class="pricing-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Vestiaires et douches
+            </li>
+            <li class="pricing-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Surveillance 8h–20h
+            </li>
+          </ul>
+          <a href="#reserver-creneau" class="btn-reserve">Réserver</a>
+        </article>
+
+        <!-- Après-midi — Featured -->
+        <article class="pricing-card pricing-card--featured fade-in" data-delay="0.1s">
+          <svg class="pricing-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+            <path d="M17 18a5 5 0 00-10 0"/>
+            <line x1="12" y1="2" x2="12" y2="9"/>
+            <line x1="4.22" y1="10.22" x2="5.64" y2="11.64"/>
+            <line x1="1" y1="18" x2="3" y2="18"/>
+            <line x1="21" y1="18" x2="23" y2="18"/>
+            <line x1="18.36" y1="11.64" x2="19.78" y2="10.22"/>
+            <line x1="23" y1="22" x2="1" y2="22"/>
+            <polyline points="8 6 12 2 16 6"/>
+          </svg>
+          <h3 class="pricing-card__name">Après-midi</h3>
+          <p class="pricing-card__hours">14h00 — 20h00</p>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount">7 000</span>
+            <span class="pricing-card__currency">FCFA / personne</span>
+          </div>
+          <ul class="pricing-card__features">
+            <li class="pricing-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Accès piscine principale
+            </li>
+            <li class="pricing-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Accès bassin naturel
+            </li>
+            <li class="pricing-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Transat &amp; parasol inclus
+            </li>
+            <li class="pricing-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Vestiaires et douches
+            </li>
+            <li class="pricing-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Boisson de bienvenue
+            </li>
+          </ul>
+          <a href="#reserver-creneau" class="btn-reserve btn-reserve--filled">Réserver</a>
+        </article>
+
+        <!-- Abonnement mensuel -->
+        <article class="pricing-card fade-in" data-delay="0.2s">
+          <svg class="pricing-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+            <line x1="16" y1="2" x2="16" y2="6"/>
+            <line x1="8" y1="2" x2="8" y2="6"/>
+            <line x1="3" y1="10" x2="21" y2="10"/>
+          </svg>
+          <h3 class="pricing-card__name">Abonnement</h3>
+          <p class="pricing-card__hours">Accès illimité · 30 jours</p>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount">80 000</span>
+            <span class="pricing-card__currency">FCFA / mois</span>
+          </div>
+          <ul class="pricing-card__features">
+            <li class="pricing-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Accès illimité 8h–20h
+            </li>
+            <li class="pricing-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Casier personnel dédié
+            </li>
+            <li class="pricing-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              1 cours de natation offert
+            </li>
+            <li class="pricing-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              −20 % sur les boissons
+            </li>
+            <li class="pricing-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              1 invité / semaine offert
+            </li>
+          </ul>
+          <a href="#reserver-creneau" class="btn-reserve">S'abonner</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       HORAIRES + RÈGLEMENT — 2 colonnes
+       ====================================================== -->
+  <section class="rules-section">
+    <div class="container">
+
+      <header class="rules-section__header fade-in">
+        <span class="eyebrow">Informations</span>
+        <h2 class="section-title">Horaires &amp; <em>Règlement</em></h2>
+        <div class="gold-line gold-line--center" style="margin-top:1.5rem;"></div>
+      </header>
+
+      <div class="rules-inner">
+
+        <!-- Horaires détaillés -->
+        <div class="fade-in">
+          <h3 class="rules-block__title">Horaires d'ouverture</h3>
+
+          <table class="hours-table" aria-label="Horaires des piscines">
+            <thead>
+              <tr>
+                <th>Bassin</th>
+                <th>Jours</th>
+                <th>Horaires</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Piscine principale</td>
+                <td>Lun – Dim</td>
+                <td>8h00 – 20h00</td>
+              </tr>
+              <tr>
+                <td>Bassin naturel</td>
+                <td>Lun – Dim</td>
+                <td>8h00 – 20h00</td>
+              </tr>
+              <tr>
+                <td>Jacuzzi</td>
+                <td>Lun – Dim</td>
+                <td>10h00 – 22h00</td>
+              </tr>
+              <tr>
+                <td>Piscine enfants</td>
+                <td>Lun – Dim</td>
+                <td>8h00 – 19h00</td>
+              </tr>
+              <tr>
+                <td>Accès résidents hôtel</td>
+                <td>Tous les jours</td>
+                <td>6h00 – 23h00</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p style="margin-top:var(--sp-md);font-size:0.8rem;color:var(--ivory-60);line-height:1.7;">
+            En cas de conditions météorologiques exceptionnelles, les horaires peuvent être modifiés. La direction se réserve le droit de fermer momentanément les bassins pour des raisons de sécurité ou d'entretien.
+          </p>
+        </div>
+
+        <!-- Règlement intérieur -->
+        <div class="fade-in" data-delay="0.15s">
+          <h3 class="rules-block__title">Règlement intérieur</h3>
+
+          <div>
+
+            <div class="rule-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+              <div class="rule-item__text">
+                <strong>Maillot de bain obligatoire</strong>
+                Short de bain, maillot une ou deux pièces. Les sous-vêtements ne sont pas admis comme tenue de bain.
+              </div>
+            </div>
+
+            <div class="rule-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 2a3 3 0 013 3v6a3 3 0 01-6 0V5a3 3 0 013-3z"/><path d="M19 10v1a7 7 0 01-14 0v-1M12 19v3M8 22h8"/>
+              </svg>
+              <div class="rule-item__text">
+                <strong>Douche obligatoire avant l'entrée</strong>
+                Les douches sont disponibles à l'entrée de chaque bassin. Merci de vous rincer avant toute baignade.
+              </div>
+            </div>
+
+            <div class="rule-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/>
+              </svg>
+              <div class="rule-item__text">
+                <strong>Plongeons interdits</strong>
+                Les sauts et plongeons depuis le bord des piscines sont interdits pour la sécurité de tous.
+              </div>
+            </div>
+
+            <div class="rule-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>
+              </svg>
+              <div class="rule-item__text">
+                <strong>Enfants de moins de 12 ans</strong>
+                Les mineurs de moins de 12 ans doivent être accompagnés d'un adulte en permanence.
+              </div>
+            </div>
+
+            <div class="rule-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/>
+              </svg>
+              <div class="rule-item__text">
+                <strong>Nourriture &amp; boissons</strong>
+                Les boissons en verre ne sont pas autorisées dans les zones de bassin. La consommation de nourriture est réservée aux espaces dédiés.
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       GALERIE — 6 photos
+       ====================================================== -->
+  <section class="gallery" style="background:var(--bg-dark);">
+    <div class="container">
+
+      <header class="gallery__header fade-in">
+        <span class="eyebrow">Galerie</span>
+        <h2 class="section-title">Nos Piscines en <em>Images</em></h2>
+        <div class="gold-line gold-line--center" style="margin-top:1.5rem;"></div>
+      </header>
+
+      <div class="gallery__grid">
+
+        <div class="gallery__item fade-in" data-delay="0s">
+          <img
+            src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=900&q=85"
+            alt="Piscine principale à débordement"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="gallery__item fade-in" data-delay="0.08s">
+          <img
+            src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=900&q=85"
+            alt="Piscine au coucher du soleil"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="gallery__item fade-in" data-delay="0.16s">
+          <img
+            src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=900&q=85"
+            alt="Bassin naturel vue aérienne"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="gallery__item fade-in" data-delay="0.1s">
+          <img
+            src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=900&q=85"
+            alt="Transats au bord de la piscine"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="gallery__item fade-in" data-delay="0.18s">
+          <img
+            src="https://images.unsplash.com/photo-1540541338287-41700207dee6?w=900&q=85"
+            alt="Piscine et végétation tropicale"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="gallery__item fade-in" data-delay="0.26s">
+          <img
+            src="https://images.unsplash.com/photo-1562778612-e1e0cda9915c?w=900&q=85"
+            alt="Jacuzzi en plein air"
+            loading="lazy"
+          />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       CTA RÉSERVATION DE CRÉNEAU — Fond image + formulaire
+       ====================================================== -->
+  <section class="pool-cta" id="reserver-creneau">
+
+    <div class="pool-cta__bg">
+      <img
+        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1920&q=85"
+        alt="Piscine de nuit"
+        loading="lazy"
+      />
+    </div>
+
+    <div class="container">
+      <div class="pool-cta__content fade-in">
+
+        <span class="eyebrow">Créneau</span>
+        <h2 class="pool-cta__title">
+          Réservez<br>
+          Votre <em>Créneau</em>
+        </h2>
+        <div class="gold-line gold-line--center"></div>
+
+        <div class="booking-form" style="margin-top:var(--sp-lg);text-align:left;">
+
+          <div id="pool-form-wrap">
+            <form id="pool-form" novalidate>
+
+              <div class="pool-form">
+
+                <div class="form-group">
+                  <label class="form-label" for="p-nom">Nom</label>
+                  <input class="form-input" type="text" id="p-nom" name="nom" placeholder="Jean Dupont" required />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="p-tel">Téléphone</label>
+                  <input class="form-input" type="tel" id="p-tel" name="tel" placeholder="+237 6 00 000 000" required />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="p-date">Date</label>
+                  <input class="form-input" type="date" id="p-date" name="date" required />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="p-creneau">Créneau</label>
+                  <select class="form-select" id="p-creneau" name="creneau" required>
+                    <option value="" disabled selected>Choisir</option>
+                    <option value="journee">Journée complète — 10 000 FCFA</option>
+                    <option value="aprem">Après-midi — 7 000 FCFA</option>
+                    <option value="abonnement">Abonnement mensuel — 80 000 FCFA</option>
+                  </select>
+                </div>
+
+                <div class="form-group form-group--full">
+                  <label class="form-label" for="p-personnes">Nombre de personnes</label>
+                  <select class="form-select" id="p-personnes" name="personnes">
+                    <option value="1">1 personne</option>
+                    <option value="2" selected>2 personnes</option>
+                    <option value="3">3 personnes</option>
+                    <option value="4">4 personnes</option>
+                    <option value="5+">5 personnes et plus</option>
+                  </select>
+                </div>
+
+                <button type="submit" class="btn-reserve btn-reserve--filled">
+                  Confirmer le créneau
+                </button>
+
+              </div>
+
+              <p class="form-note" style="margin-top:var(--sp-sm);">
+                Créneau garanti · Paiement sur place · Annulation libre 24h avant
+              </p>
+
+            </form>
+          </div>
+
+          <div class="form-success" id="pool-success" aria-live="polite">
+            <svg class="form-success__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+            <h3 class="form-success__title">Créneau réservé !</h3>
+            <p class="form-success__text">Votre créneau est confirmé. À bientôt au bord des piscines du Complexe !</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       FOOTER
+       ====================================================== -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer__grid">
+        <div>
+          <div class="footer__logo">Le <span>Complexe</span></div>
+          <p class="footer__tagline">L'excellence africaine à son apogée. Un complexe touristique haut de gamme au cœur du Cameroun.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Twitter / X">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Navigation</p>
+          <ul class="footer__links">
+            <li><a href="index.html"        class="footer__nav-link">Accueil</a></li>
+            <li><a href="hotel.html"        class="footer__nav-link">Hôtel</a></li>
+            <li><a href="restaurant.html"   class="footer__nav-link">Restaurant</a></li>
+            <li><a href="piscine.html"      class="footer__nav-link">Piscine</a></li>
+            <li><a href="nuit.html"    class="footer__nav-link">Night Club</a></li>
+            <li><a href="loisirs.html" class="footer__nav-link">Loisirs</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Les Piscines</p>
+          <ul class="footer__links">
+            <li><a href="#reserver-creneau" class="footer__nav-link">Réserver un créneau</a></li>
+            <li><a href="#"                 class="footer__nav-link">Tarifs journée</a></li>
+            <li><a href="#"                 class="footer__nav-link">Abonnements</a></li>
+            <li><a href="#"                 class="footer__nav-link">Cours de natation</a></li>
+            <li><a href="#"                 class="footer__nav-link">Jacuzzi privatif</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Contact</p>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+            </svg>
+            <span>Ouvert tous les jours<br>8h00 – 20h00</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+            </svg>
+            <span>+237 6 00 000 000</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 Le Complexe · Tous droits réservés</span>
+        <span>Conçu avec soin au Cameroun</span>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <script src="main.js"></script>
+
+  <script>
+    (function () {
+      /* Dates minimales */
+      const today = new Date().toISOString().split('T')[0];
+      document.querySelectorAll('input[type="date"]').forEach(el => { el.min = today; });
+
+      /* Soumission formulaire piscine */
+      const form    = document.getElementById('pool-form');
+      const wrap    = document.getElementById('pool-form-wrap');
+      const success = document.getElementById('pool-success');
+
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          wrap.style.transition = 'opacity 0.3s ease';
+          wrap.style.opacity = '0';
+          wrap.style.pointerEvents = 'none';
+          setTimeout(() => {
+            wrap.style.display = 'none';
+            success.classList.add('visible');
+          }, 320);
+        });
+      }
+    })();
+  </script>
+
+</body>
+</html>
