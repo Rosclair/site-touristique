@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Loisirs au Complexe — Pisciculture artisanale, manège et activités plein air au Cameroun. Tarifs, horaires et réservation." />
-  <title>Loisirs — Le Complexe · Cameroun</title>
+  <meta name="description" content="Loisirs au Complexe - Pisciculture artisanale, manège et activités plein air au Cameroun. Tarifs, horaires et réservation." />
+  <title>Loisirs - Le Complexe · Cameroun</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="style.css" />
 
   <style>
-    /* Tons naturels — fond légèrement vert-sombre */
+    /* Tons naturels - fond légèrement vert-sombre */
     :root {
       --bg-dark:   #090D08;
       --bg-card:   #0D110C;
@@ -44,6 +44,34 @@
 </head>
 <body>
 
+  <div id="preloader" class="preloader" role="status" aria-label="Chargement de Le Complexe">
+    <span class="preloader__star" aria-hidden="true"></span>
+    <span class="preloader__star" aria-hidden="true"></span>
+    <span class="preloader__star" aria-hidden="true"></span>
+    <span class="preloader__star" aria-hidden="true"></span>
+    <div class="preloader__bg-glow" aria-hidden="true"></div>
+    <div class="preloader__inner">
+      <div class="preloader__compass" aria-hidden="true">
+        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="40" cy="40" r="36" fill="none" stroke="rgba(201,169,110,0.1)" stroke-width="1"/>
+          <circle cx="40" cy="40" r="36" fill="none" stroke="#C9A96E" stroke-width="1.5" stroke-linecap="round" class="preloader__arc"/>
+          <line x1="40" y1="5" x2="40" y2="13" stroke="#C9A96E" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="40" y1="67" x2="40" y2="75" stroke="rgba(201,169,110,0.3)" stroke-width="1"/>
+          <line x1="5" y1="40" x2="13" y2="40" stroke="rgba(201,169,110,0.3)" stroke-width="1"/>
+          <line x1="67" y1="40" x2="75" y2="40" stroke="rgba(201,169,110,0.3)" stroke-width="1"/>
+          <polygon points="40,22 43.5,40 40,58 36.5,40" fill="none" stroke="#C9A96E" stroke-width="1.2" stroke-linejoin="round"/>
+          <polygon points="40,22 43.5,40 40,40 36.5,40" fill="#C9A96E" opacity="0.65"/>
+          <circle cx="40" cy="40" r="2.5" fill="#C9A96E"/>
+        </svg>
+      </div>
+      <div class="preloader__logo">Le <em>Complexe</em></div>
+      <p class="preloader__tagline">Cameroun &nbsp;·&nbsp; Luxe &amp; Nature</p>
+      <div class="preloader__progress-wrap" aria-hidden="true">
+        <div class="preloader__progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
   <a href="#contact-loisirs" class="skip-link">Aller au contenu principal</a>
 
   <!-- ======================================================
@@ -51,29 +79,40 @@
        ====================================================== -->
   <nav class="navbar" role="navigation" aria-label="Navigation principale">
     <div class="navbar__inner">
-      <a href="index.html" class="navbar__logo">Le <span>Complexe</span></a>
+
+      <a href="index.html" class="navbar__logo">
+        Le <span>Complexe</span>
+      </a>
 
       <ul class="navbar__nav" role="list">
-        <li><a href="index.html"      class="navbar__link">Accueil</a></li>
-        <li><a href="hotel.html"      class="navbar__link">Hôtel</a></li>
-        <li><a href="restaurant.html" class="navbar__link">Restaurant</a></li>
-        <li><a href="piscine.html"    class="navbar__link">Piscine</a></li>
+        <li class="navbar__close-item">
+          <button class="navbar__close-btn" aria-label="Fermer le menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+          </button>
+        </li>
+        <li><a href="index.html"        class="navbar__link">Accueil</a></li>
+        <li><a href="hotel.html"        class="navbar__link">Hôtel</a></li>
+        <li><a href="restaurant.html"   class="navbar__link">Restaurant</a></li>
+        <li><a href="piscine.html"      class="navbar__link">Piscine</a></li>
         <li><a href="nuit.html"       class="navbar__link">Night Club</a></li>
         <li><a href="loisirs.html"    class="navbar__link active">Loisirs</a></li>
         <li class="navbar__cta">
-          <a href="#contact-loisirs" class="btn-reserve">Réserver</a>
+          <a href="hotel.html#reserver" class="btn-reserve">Réserver</a>
         </li>
       </ul>
 
       <button class="navbar__hamburger" aria-label="Menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
+
     </div>
   </nav>
 
 
   <!-- ======================================================
-       HERO — Nature & Activités outdoor
+       HERO - Nature & Activités outdoor
        ====================================================== -->
   <section class="page-hero">
     <img
@@ -95,7 +134,7 @@
           <em>Grand Air</em>
         </h1>
         <p class="page-hero__sub">
-          Pisciculture artisanale, manège familial et activités nature — des expériences pour tous les âges, au cœur du Cameroun.
+          Pisciculture artisanale, manège familial et activités nature - des expériences pour tous les âges, au cœur du Cameroun.
         </p>
       </div>
     </div>
@@ -103,7 +142,7 @@
 
 
   <!-- ======================================================
-       INTRO — Présentation des loisirs
+       INTRO - Présentation des loisirs
        ====================================================== -->
   <section style="padding:var(--sp-xxl) 0;">
     <div class="container">
@@ -112,7 +151,7 @@
         <h2 class="section-title">Deux <em>Univers</em> à Explorer</h2>
         <div class="gold-line gold-line--center" style="margin-top:1.5rem;margin-bottom:var(--sp-lg);"></div>
         <p style="font-size:clamp(0.95rem,1.5vw,1.1rem);color:var(--ivory-60);line-height:1.9;">
-          Entre la sérénité des bassins piscicoles où se dévoile le cycle de la vie aquatique, et la joie du manège familial sous les étoiles tropicales — Le Complexe offre une parenthèse d'émerveillement pour chaque membre de votre famille.
+          Entre la sérénité des bassins piscicoles où se dévoile le cycle de la vie aquatique, et la joie du manège familial sous les étoiles tropicales - Le Complexe offre une parenthèse d'émerveillement pour chaque membre de votre famille.
         </p>
       </div>
     </div>
@@ -120,7 +159,7 @@
 
 
   <!-- ======================================================
-       ACTIVITÉS CÔTE À CÔTE — Pisciculture | Manège
+       ACTIVITÉS CÔTE À CÔTE - Pisciculture | Manège
        ====================================================== -->
   <section class="activities-split nature-section" id="activites">
     <div class="container">
@@ -231,7 +270,7 @@
 
               <div class="activity-price-row">
                 <div>
-                  <span class="activity-price-row__label">Enfants — de 12 ans</span>
+                  <span class="activity-price-row__label">Enfants - de 12 ans</span>
                   <span class="activity-price-row__sub">15 minutes par tour</span>
                 </div>
                 <span class="activity-price-row__price">1 000 FCFA</span>
@@ -255,7 +294,7 @@
 
               <div class="activity-price-row">
                 <div>
-                  <span class="activity-price-row__label">Pass journée — Enfant</span>
+                  <span class="activity-price-row__label">Pass journée - Enfant</span>
                   <span class="activity-price-row__sub">Tours illimités de 9h à 19h</span>
                 </div>
                 <span class="activity-price-row__price">8 000 FCFA</span>
@@ -338,7 +377,7 @@
 
         <div class="gallery__item fade-in" data-delay="0.18s">
           <img
-            src="https://images.unsplash.com/photo-1484723091739-30e9c4b9a5d5?w=900&q=85"
+            src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=900&q=85"
             alt="Dégustation produits frais"
             loading="lazy"
           />
@@ -358,7 +397,7 @@
 
 
   <!-- ======================================================
-       CTA — CONTACT & RÉSERVATION
+       CTA - CONTACT & RÉSERVATION
        ====================================================== -->
   <section class="booking-section" id="contact-loisirs">
     <div class="container">
@@ -423,10 +462,10 @@
                     <label class="form-label" for="l-activite">Activité</label>
                     <select class="form-select" id="l-activite" name="activite" required>
                       <option value="" disabled selected>Choisir</option>
-                      <option value="pisciculture">Pisciculture — visite guidée</option>
+                      <option value="pisciculture">Pisciculture - visite guidée</option>
                       <option value="peche">Pêche guidée</option>
                       <option value="degustation">Dégustation sur place</option>
-                      <option value="manege">Manège — pass journée</option>
+                      <option value="manege">Manège - pass journée</option>
                       <option value="famille">Pack famille (tout inclus)</option>
                       <option value="scolaire">Visite scolaire</option>
                     </select>

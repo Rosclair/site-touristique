@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Piscines du Complexe — Piscine à débordement et bassin naturel aux eaux turquoise au Cameroun. Tarifs, horaires et réservation de créneau." />
-  <title>Piscine — Le Complexe · Cameroun</title>
+  <meta name="description" content="Piscines du Complexe - Piscine à débordement et bassin naturel aux eaux turquoise au Cameroun. Tarifs, horaires et réservation de créneau." />
+  <title>Piscine - Le Complexe · Cameroun</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,6 +14,34 @@
 </head>
 <body>
 
+  <div id="preloader" class="preloader" role="status" aria-label="Chargement de Le Complexe">
+    <span class="preloader__star" aria-hidden="true"></span>
+    <span class="preloader__star" aria-hidden="true"></span>
+    <span class="preloader__star" aria-hidden="true"></span>
+    <span class="preloader__star" aria-hidden="true"></span>
+    <div class="preloader__bg-glow" aria-hidden="true"></div>
+    <div class="preloader__inner">
+      <div class="preloader__compass" aria-hidden="true">
+        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="40" cy="40" r="36" fill="none" stroke="rgba(201,169,110,0.1)" stroke-width="1"/>
+          <circle cx="40" cy="40" r="36" fill="none" stroke="#C9A96E" stroke-width="1.5" stroke-linecap="round" class="preloader__arc"/>
+          <line x1="40" y1="5" x2="40" y2="13" stroke="#C9A96E" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="40" y1="67" x2="40" y2="75" stroke="rgba(201,169,110,0.3)" stroke-width="1"/>
+          <line x1="5" y1="40" x2="13" y2="40" stroke="rgba(201,169,110,0.3)" stroke-width="1"/>
+          <line x1="67" y1="40" x2="75" y2="40" stroke="rgba(201,169,110,0.3)" stroke-width="1"/>
+          <polygon points="40,22 43.5,40 40,58 36.5,40" fill="none" stroke="#C9A96E" stroke-width="1.2" stroke-linejoin="round"/>
+          <polygon points="40,22 43.5,40 40,40 36.5,40" fill="#C9A96E" opacity="0.65"/>
+          <circle cx="40" cy="40" r="2.5" fill="#C9A96E"/>
+        </svg>
+      </div>
+      <div class="preloader__logo">Le <em>Complexe</em></div>
+      <p class="preloader__tagline">Cameroun &nbsp;·&nbsp; Luxe &amp; Nature</p>
+      <div class="preloader__progress-wrap" aria-hidden="true">
+        <div class="preloader__progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
   <a href="#reserver-creneau" class="skip-link">Aller au contenu principal</a>
 
   <!-- ======================================================
@@ -21,29 +49,40 @@
        ====================================================== -->
   <nav class="navbar" role="navigation" aria-label="Navigation principale">
     <div class="navbar__inner">
-      <a href="index.html" class="navbar__logo">Le <span>Complexe</span></a>
+
+      <a href="index.html" class="navbar__logo">
+        Le <span>Complexe</span>
+      </a>
 
       <ul class="navbar__nav" role="list">
+        <li class="navbar__close-item">
+          <button class="navbar__close-btn" aria-label="Fermer le menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+          </button>
+        </li>
         <li><a href="index.html"        class="navbar__link">Accueil</a></li>
         <li><a href="hotel.html"        class="navbar__link">Hôtel</a></li>
         <li><a href="restaurant.html"   class="navbar__link">Restaurant</a></li>
         <li><a href="piscine.html"      class="navbar__link active">Piscine</a></li>
-        <li><a href="nuit.html"    class="navbar__link">Night Club</a></li>
-        <li><a href="loisirs.html" class="navbar__link">Loisirs</a></li>
+        <li><a href="nuit.html"       class="navbar__link">Night Club</a></li>
+        <li><a href="loisirs.html"    class="navbar__link">Loisirs</a></li>
         <li class="navbar__cta">
-          <a href="#reserver-creneau" class="btn-reserve">Réserver</a>
+          <a href="hotel.html#reserver" class="btn-reserve">Réserver</a>
         </li>
       </ul>
 
       <button class="navbar__hamburger" aria-label="Menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
+
     </div>
   </nav>
 
 
   <!-- ======================================================
-       HERO — Eau turquoise et ciel
+       HERO - Eau turquoise et ciel
        ====================================================== -->
   <section class="page-hero">
     <img
@@ -66,7 +105,7 @@
           du Complexe
         </h1>
         <p class="page-hero__sub">
-          Piscine à débordement, bassin naturel, jacuzzis — une invitation à la flottaison sous le soleil camerounais.
+          Piscine à débordement, bassin naturel, jacuzzis - une invitation à la flottaison sous le soleil camerounais.
         </p>
       </div>
     </div>
@@ -74,7 +113,7 @@
 
 
   <!-- ======================================================
-       TARIFS D'ACCÈS — 3 cards
+       TARIFS D'ACCÈS - 3 cards
        ====================================================== -->
   <section class="pricing-section">
     <div class="container">
@@ -97,7 +136,7 @@
             <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
           </svg>
           <h3 class="pricing-card__name">Journée complète</h3>
-          <p class="pricing-card__hours">8h00 — 20h00</p>
+          <p class="pricing-card__hours">8h00 - 20h00</p>
           <div class="pricing-card__price">
             <span class="pricing-card__amount">10 000</span>
             <span class="pricing-card__currency">FCFA / personne</span>
@@ -127,7 +166,7 @@
           <a href="#reserver-creneau" class="btn-reserve">Réserver</a>
         </article>
 
-        <!-- Après-midi — Featured -->
+        <!-- Après-midi - Featured -->
         <article class="pricing-card pricing-card--featured fade-in" data-delay="0.1s">
           <svg class="pricing-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
             <path d="M17 18a5 5 0 00-10 0"/>
@@ -140,7 +179,7 @@
             <polyline points="8 6 12 2 16 6"/>
           </svg>
           <h3 class="pricing-card__name">Après-midi</h3>
-          <p class="pricing-card__hours">14h00 — 20h00</p>
+          <p class="pricing-card__hours">14h00 - 20h00</p>
           <div class="pricing-card__price">
             <span class="pricing-card__amount">7 000</span>
             <span class="pricing-card__currency">FCFA / personne</span>
@@ -215,7 +254,7 @@
 
 
   <!-- ======================================================
-       HORAIRES + RÈGLEMENT — 2 colonnes
+       HORAIRES + RÈGLEMENT - 2 colonnes
        ====================================================== -->
   <section class="rules-section">
     <div class="container">
@@ -340,7 +379,7 @@
 
 
   <!-- ======================================================
-       GALERIE — 6 photos
+       GALERIE - 6 photos
        ====================================================== -->
   <section class="gallery" style="background:var(--bg-dark);">
     <div class="container">
@@ -407,7 +446,7 @@
 
 
   <!-- ======================================================
-       CTA RÉSERVATION DE CRÉNEAU — Fond image + formulaire
+       CTA RÉSERVATION DE CRÉNEAU - Fond image + formulaire
        ====================================================== -->
   <section class="pool-cta" id="reserver-creneau">
 
@@ -455,9 +494,9 @@
                   <label class="form-label" for="p-creneau">Créneau</label>
                   <select class="form-select" id="p-creneau" name="creneau" required>
                     <option value="" disabled selected>Choisir</option>
-                    <option value="journee">Journée complète — 10 000 FCFA</option>
-                    <option value="aprem">Après-midi — 7 000 FCFA</option>
-                    <option value="abonnement">Abonnement mensuel — 80 000 FCFA</option>
+                    <option value="journee">Journée complète - 10 000 FCFA</option>
+                    <option value="aprem">Après-midi - 7 000 FCFA</option>
+                    <option value="abonnement">Abonnement mensuel - 80 000 FCFA</option>
                   </select>
                 </div>
 

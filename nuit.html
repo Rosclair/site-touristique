@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Night Club Le Complexe — Soirées, bar VIP et événements exclusifs au Cameroun. Programme des soirées et réservation de tables VIP." />
-  <title>Night Club — Le Complexe · Cameroun</title>
+  <meta name="description" content="Night Club Le Complexe - Soirées, bar VIP et événements exclusifs au Cameroun. Programme des soirées et réservation de tables VIP." />
+  <title>Night Club - Le Complexe · Cameroun</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="style.css" />
 
   <style>
-    /* Ambiance nightclub — variations sombres et dorées */
+    /* Ambiance nightclub - variations sombres et dorées */
     .hero__overlay {
       background: linear-gradient(
         175deg,
@@ -38,6 +38,34 @@
 </head>
 <body>
 
+  <div id="preloader" class="preloader" role="status" aria-label="Chargement de Le Complexe">
+    <span class="preloader__star" aria-hidden="true"></span>
+    <span class="preloader__star" aria-hidden="true"></span>
+    <span class="preloader__star" aria-hidden="true"></span>
+    <span class="preloader__star" aria-hidden="true"></span>
+    <div class="preloader__bg-glow" aria-hidden="true"></div>
+    <div class="preloader__inner">
+      <div class="preloader__compass" aria-hidden="true">
+        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="40" cy="40" r="36" fill="none" stroke="rgba(201,169,110,0.1)" stroke-width="1"/>
+          <circle cx="40" cy="40" r="36" fill="none" stroke="#C9A96E" stroke-width="1.5" stroke-linecap="round" class="preloader__arc"/>
+          <line x1="40" y1="5" x2="40" y2="13" stroke="#C9A96E" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="40" y1="67" x2="40" y2="75" stroke="rgba(201,169,110,0.3)" stroke-width="1"/>
+          <line x1="5" y1="40" x2="13" y2="40" stroke="rgba(201,169,110,0.3)" stroke-width="1"/>
+          <line x1="67" y1="40" x2="75" y2="40" stroke="rgba(201,169,110,0.3)" stroke-width="1"/>
+          <polygon points="40,22 43.5,40 40,58 36.5,40" fill="none" stroke="#C9A96E" stroke-width="1.2" stroke-linejoin="round"/>
+          <polygon points="40,22 43.5,40 40,40 36.5,40" fill="#C9A96E" opacity="0.65"/>
+          <circle cx="40" cy="40" r="2.5" fill="#C9A96E"/>
+        </svg>
+      </div>
+      <div class="preloader__logo">Le <em>Complexe</em></div>
+      <p class="preloader__tagline">Cameroun &nbsp;·&nbsp; Luxe &amp; Nature</p>
+      <div class="preloader__progress-wrap" aria-hidden="true">
+        <div class="preloader__progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
   <a href="#programme" class="skip-link">Aller au contenu principal</a>
 
   <!-- ======================================================
@@ -45,29 +73,40 @@
        ====================================================== -->
   <nav class="navbar" role="navigation" aria-label="Navigation principale">
     <div class="navbar__inner">
-      <a href="index.html" class="navbar__logo">Le <span>Complexe</span></a>
+
+      <a href="index.html" class="navbar__logo">
+        Le <span>Complexe</span>
+      </a>
 
       <ul class="navbar__nav" role="list">
-        <li><a href="index.html"      class="navbar__link">Accueil</a></li>
-        <li><a href="hotel.html"      class="navbar__link">Hôtel</a></li>
-        <li><a href="restaurant.html" class="navbar__link">Restaurant</a></li>
-        <li><a href="piscine.html"    class="navbar__link">Piscine</a></li>
+        <li class="navbar__close-item">
+          <button class="navbar__close-btn" aria-label="Fermer le menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+          </button>
+        </li>
+        <li><a href="index.html"        class="navbar__link">Accueil</a></li>
+        <li><a href="hotel.html"        class="navbar__link">Hôtel</a></li>
+        <li><a href="restaurant.html"   class="navbar__link">Restaurant</a></li>
+        <li><a href="piscine.html"      class="navbar__link">Piscine</a></li>
         <li><a href="nuit.html"       class="navbar__link active">Night Club</a></li>
         <li><a href="loisirs.html"    class="navbar__link">Loisirs</a></li>
         <li class="navbar__cta">
-          <a href="#reserver-vip" class="btn-reserve">Réserver</a>
+          <a href="hotel.html#reserver" class="btn-reserve">Réserver</a>
         </li>
       </ul>
 
       <button class="navbar__hamburger" aria-label="Menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
+
     </div>
   </nav>
 
 
   <!-- ======================================================
-       HERO — Soirée festive, très sombre
+       HERO - Soirée festive, très sombre
        ====================================================== -->
   <section class="hero">
     <img
@@ -88,7 +127,7 @@
         Commence <em>Ici</em>
       </h1>
       <p class="hero__subtitle">
-        Musique, lumières et cocktails d'exception — les soirées du Complexe sont une légende.
+        Musique, lumières et cocktails d'exception - les soirées du Complexe sont une légende.
       </p>
       <div class="hero__ctas">
         <a href="#programme" class="btn-outline-ivory">Voir le programme</a>
@@ -168,7 +207,7 @@
             <span class="event-item__dayname">Sam · Juin</span>
           </div>
           <div>
-            <p class="event-item__theme">Gala — Club Privé</p>
+            <p class="event-item__theme">Gala - Club Privé</p>
             <p class="event-item__dj">DJ Master × Live Band</p>
           </div>
           <div class="event-item__right">
@@ -198,7 +237,7 @@
             <span class="event-item__dayname">Sam · Juin</span>
           </div>
           <div>
-            <p class="event-item__theme">Années 90 — Nostalgie</p>
+            <p class="event-item__theme">Années 90 - Nostalgie</p>
             <p class="event-item__dj">DJ Vintage</p>
           </div>
           <div class="event-item__right">
@@ -218,7 +257,7 @@
 
 
   <!-- ======================================================
-       TARIFS VIP — 3 formules
+       TARIFS VIP - 3 formules
        ====================================================== -->
   <section class="vip-section pricing-section">
     <div class="container">
@@ -228,7 +267,7 @@
         <h2 class="section-title">Formules <em>Exclusives</em></h2>
         <div class="gold-line gold-line--center" style="margin-top:1.5rem;"></div>
         <p style="margin-top:var(--sp-md);font-size:0.95rem;color:var(--ivory-60);max-width:560px;margin-left:auto;margin-right:auto;line-height:1.8;">
-          Tables premium, service dédié et bouteilles de prestige — vivez la nuit autrement.
+          Tables premium, service dédié et bouteilles de prestige - vivez la nuit autrement.
         </p>
       </header>
 
@@ -271,7 +310,7 @@
           <a href="#reserver-vip" class="btn-reserve">Réserver</a>
         </article>
 
-        <!-- Gold VIP — Featured -->
+        <!-- Gold VIP - Featured -->
         <article class="pricing-card pricing-card--featured fade-in" data-delay="0.1s">
           <svg class="pricing-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
@@ -381,7 +420,7 @@
 
         <div class="gallery__item fade-in" data-delay="0.16s">
           <img
-            src="https://images.unsplash.com/photo-1574023073897-1d05e867b86b?w=900&q=85"
+            src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=900&q=85"
             alt="Intérieur du night club"
             loading="lazy"
           />
@@ -417,7 +456,7 @@
 
 
   <!-- ======================================================
-       CTA — RÉSERVER UNE TABLE VIP
+       CTA - RÉSERVER UNE TABLE VIP
        ====================================================== -->
   <section class="booking-section" id="reserver-vip" style="background:#050302;">
     <div class="container">
@@ -430,7 +469,7 @@
           <div class="gold-line" style="margin-top:1.5rem;"></div>
 
           <p class="booking-info__text">
-            Garantissez votre espace pour une soirée exceptionnelle. Notre équipe VIP s'occupe de tout — de votre arrivée à votre départ.
+            Garantissez votre espace pour une soirée exceptionnelle. Notre équipe VIP s'occupe de tout - de votre arrivée à votre départ.
           </p>
 
           <div class="booking-perks">
@@ -482,9 +521,9 @@
                     <label class="form-label" for="v-formule">Formule VIP</label>
                     <select class="form-select" id="v-formule" name="formule" required>
                       <option value="" disabled selected>Choisir</option>
-                      <option value="duo">Duo VIP — 50 000 FCFA (2 pers.)</option>
-                      <option value="gold">Gold VIP — 120 000 FCFA (6 pers.)</option>
-                      <option value="prestige">Prestige VIP — 200 000 FCFA (10 pers.)</option>
+                      <option value="duo">Duo VIP - 50 000 FCFA (2 pers.)</option>
+                      <option value="gold">Gold VIP - 120 000 FCFA (6 pers.)</option>
+                      <option value="prestige">Prestige VIP - 200 000 FCFA (10 pers.)</option>
                     </select>
                   </div>
                 </div>

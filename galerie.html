@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Galerie photo du Complexe — Hôtel, restaurant, piscines, soirées et nature au Cameroun. Découvrez le complexe en images." />
-  <title>Galerie — Le Complexe · Cameroun</title>
+  <meta name="description" content="Galerie photo du Complexe - Hôtel, restaurant, piscines, soirées et nature au Cameroun. Découvrez le complexe en images." />
+  <title>Galerie - Le Complexe · Cameroun</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,6 +13,34 @@
 </head>
 <body>
 
+  <div id="preloader" class="preloader" role="status" aria-label="Chargement de Le Complexe">
+    <span class="preloader__star" aria-hidden="true"></span>
+    <span class="preloader__star" aria-hidden="true"></span>
+    <span class="preloader__star" aria-hidden="true"></span>
+    <span class="preloader__star" aria-hidden="true"></span>
+    <div class="preloader__bg-glow" aria-hidden="true"></div>
+    <div class="preloader__inner">
+      <div class="preloader__compass" aria-hidden="true">
+        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="40" cy="40" r="36" fill="none" stroke="rgba(201,169,110,0.1)" stroke-width="1"/>
+          <circle cx="40" cy="40" r="36" fill="none" stroke="#C9A96E" stroke-width="1.5" stroke-linecap="round" class="preloader__arc"/>
+          <line x1="40" y1="5" x2="40" y2="13" stroke="#C9A96E" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="40" y1="67" x2="40" y2="75" stroke="rgba(201,169,110,0.3)" stroke-width="1"/>
+          <line x1="5" y1="40" x2="13" y2="40" stroke="rgba(201,169,110,0.3)" stroke-width="1"/>
+          <line x1="67" y1="40" x2="75" y2="40" stroke="rgba(201,169,110,0.3)" stroke-width="1"/>
+          <polygon points="40,22 43.5,40 40,58 36.5,40" fill="none" stroke="#C9A96E" stroke-width="1.2" stroke-linejoin="round"/>
+          <polygon points="40,22 43.5,40 40,40 36.5,40" fill="#C9A96E" opacity="0.65"/>
+          <circle cx="40" cy="40" r="2.5" fill="#C9A96E"/>
+        </svg>
+      </div>
+      <div class="preloader__logo">Le <em>Complexe</em></div>
+      <p class="preloader__tagline">Cameroun &nbsp;·&nbsp; Luxe &amp; Nature</p>
+      <div class="preloader__progress-wrap" aria-hidden="true">
+        <div class="preloader__progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
   <a href="#galerie-principale" class="skip-link">Aller à la galerie</a>
 
   <!-- ======================================================
@@ -20,13 +48,21 @@
        ====================================================== -->
   <nav class="navbar" role="navigation" aria-label="Navigation principale">
     <div class="navbar__inner">
-      <a href="index.html" class="navbar__logo">Le <span>Complexe</span></a>
+
+      <a href="index.html" class="navbar__logo">
+        Le <span>Complexe</span>
+      </a>
 
       <ul class="navbar__nav" role="list">
-        <li><a href="index.html"      class="navbar__link">Accueil</a></li>
-        <li><a href="hotel.html"      class="navbar__link">Hôtel</a></li>
-        <li><a href="restaurant.html" class="navbar__link">Restaurant</a></li>
-        <li><a href="piscine.html"    class="navbar__link">Piscine</a></li>
+        <li class="navbar__close-item">
+          <button class="navbar__close-btn" aria-label="Fermer le menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+          </button>
+        </li>
+        <li><a href="index.html"        class="navbar__link">Accueil</a></li>
+        <li><a href="hotel.html"        class="navbar__link">Hôtel</a></li>
+        <li><a href="restaurant.html"   class="navbar__link">Restaurant</a></li>
+        <li><a href="piscine.html"      class="navbar__link">Piscine</a></li>
         <li><a href="nuit.html"       class="navbar__link">Night Club</a></li>
         <li><a href="loisirs.html"    class="navbar__link">Loisirs</a></li>
         <li class="navbar__cta">
@@ -35,8 +71,11 @@
       </ul>
 
       <button class="navbar__hamburger" aria-label="Menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
+
     </div>
   </nav>
 
@@ -52,7 +91,7 @@
       </h1>
       <div class="gold-line gold-line--center" style="margin-top:1.5rem;"></div>
       <p class="gallery-page-hero__sub">
-        Hôtel · Restaurant · Piscine · Soirées · Nature — 22 photos pour vous immerger dans l'univers du Complexe.
+        Hôtel · Restaurant · Piscine · Soirées · Nature - 22 photos pour vous immerger dans l'univers du Complexe.
       </p>
     </div>
   </header>
@@ -399,7 +438,7 @@
 
 
   <!-- ======================================================
-       LIGHTBOX — Overlay JS natif
+       LIGHTBOX - Overlay JS natif
        ====================================================== -->
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visionneuse d'images">
 

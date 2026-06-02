@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Le Complexe — Complexe touristique haut de gamme au Cameroun. Hôtel, restaurant gastronomique, piscines, boîte de nuit, pisciculture et loisirs." />
-  <title>Le Complexe — Luxe &amp; Nature au Cameroun</title>
+  <meta name="description" content="Le Complexe - Complexe touristique haut de gamme au Cameroun. Hôtel, restaurant gastronomique, piscines, boîte de nuit, pisciculture et loisirs." />
+  <title>Le Complexe - Luxe &amp; Nature au Cameroun</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,6 +13,39 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- ======================================================
+       PRELOADER
+       ====================================================== -->
+  <div id="preloader" class="preloader" role="status" aria-label="Chargement de Le Complexe">
+    <span class="preloader__star" aria-hidden="true"></span>
+    <span class="preloader__star" aria-hidden="true"></span>
+    <span class="preloader__star" aria-hidden="true"></span>
+    <span class="preloader__star" aria-hidden="true"></span>
+    <div class="preloader__bg-glow" aria-hidden="true"></div>
+    <div class="preloader__inner">
+      <div class="preloader__compass" aria-hidden="true">
+        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="40" cy="40" r="36" fill="none" stroke="rgba(201,169,110,0.1)" stroke-width="1"/>
+          <circle cx="40" cy="40" r="36" fill="none" stroke="#C9A96E" stroke-width="1.5"
+                  stroke-linecap="round" class="preloader__arc"/>
+          <line x1="40" y1="5"  x2="40" y2="13" stroke="#C9A96E" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="40" y1="67" x2="40" y2="75" stroke="rgba(201,169,110,0.3)" stroke-width="1"/>
+          <line x1="5"  y1="40" x2="13" y2="40" stroke="rgba(201,169,110,0.3)" stroke-width="1"/>
+          <line x1="67" y1="40" x2="75" y2="40" stroke="rgba(201,169,110,0.3)" stroke-width="1"/>
+          <polygon points="40,22 43.5,40 40,58 36.5,40" fill="none" stroke="#C9A96E" stroke-width="1.2" stroke-linejoin="round"/>
+          <polygon points="40,22 43.5,40 40,40 36.5,40" fill="#C9A96E" opacity="0.65"/>
+          <circle cx="40" cy="40" r="2.5" fill="#C9A96E"/>
+        </svg>
+      </div>
+      <div class="preloader__logo">Le <em>Complexe</em></div>
+      <p class="preloader__tagline">Cameroun &nbsp;·&nbsp; Luxe &amp; Nature</p>
+      <div class="preloader__progress-wrap" aria-hidden="true">
+        <div class="preloader__progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
 
   <a href="#services" class="skip-link">Aller au contenu principal</a>
 
@@ -27,6 +60,16 @@
       </a>
 
       <ul class="navbar__nav" role="list">
+
+        <!-- Bouton fermeture menu mobile -->
+        <li class="navbar__close-item">
+          <button class="navbar__close-btn" aria-label="Fermer le menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+          </button>
+        </li>
+
         <li><a href="index.html"        class="navbar__link active">Accueil</a></li>
         <li><a href="hotel.html"        class="navbar__link">Hôtel</a></li>
         <li><a href="restaurant.html"   class="navbar__link">Restaurant</a></li>
@@ -92,7 +135,7 @@
 
 
   <!-- ======================================================
-       SERVICES — 6 cartes
+       SERVICES - 6 cartes
        ====================================================== -->
   <section id="services" class="services">
     <div class="container">
@@ -186,7 +229,7 @@
           </svg>
           <h3 class="service-card__title">Pisciculture</h3>
           <p class="service-card__text">
-            Découvrez nos bassins d'élevage en pleine nature. Une expérience éducative et sensorielle unique — de l'étang à l'assiette, la fraîcheur du terroir.
+            Découvrez nos bassins d'élevage en pleine nature. Une expérience éducative et sensorielle unique - de l'étang à l'assiette, la fraîcheur du terroir.
           </p>
           <a href="loisirs.html" class="service-card__link">
             Voir les bassins
@@ -203,7 +246,7 @@
           </svg>
           <h3 class="service-card__title">Loisirs</h3>
           <p class="service-card__text">
-            Randonnées en forêt tropicale, sports nautiques, spa et bien-être, activités enfants — chaque instant est une invitation à l'aventure ou à la détente.
+            Randonnées en forêt tropicale, sports nautiques, spa et bien-être, activités enfants - chaque instant est une invitation à l'aventure ou à la détente.
           </p>
           <a href="loisirs.html" class="service-card__link">
             Voir les activités
@@ -217,7 +260,7 @@
 
 
   <!-- ======================================================
-       L'EXPÉRIENCE — Layout asymétrique
+       L'EXPÉRIENCE - Layout asymétrique
        ====================================================== -->
   <section id="experience" class="experience">
     <div class="container">
@@ -253,7 +296,7 @@
             Niché dans un cadre naturel d'exception au cœur du Cameroun, Le Complexe vous accueille
             dans un écrin de luxe où chaque instant devient souvenir. Des villas tropicales baignées
             de lumière dorée aux soirées enflammées sous les étoiles, de la gastronomie raffinée aux
-            eaux cristallines de nos piscines — ici, l'excellence africaine s'exprime dans toute sa splendeur.
+            eaux cristallines de nos piscines - ici, l'excellence africaine s'exprime dans toute sa splendeur.
             <br><br>
             Chaque détail a été pensé pour que votre séjour transcende vos attentes. Bienvenue chez vous.
           </p>
@@ -329,7 +372,7 @@
 
         <div class="gallery__item fade-in" data-delay="0.2s">
           <img
-            src="https://images.unsplash.com/photo-1520250497591-112fb674bd3c?w=900&q=80"
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=80"
             alt="Vue extérieure du complexe"
             loading="lazy"
           />
@@ -377,6 +420,214 @@
 
     </div>
   </section>
+
+
+  <!-- ======================================================
+       EXPÉRIENCES PREMIUM & CLUB PRIVILÈGE
+       ====================================================== -->
+  <section id="offres-premium" class="premium-section" aria-labelledby="premium-title">
+
+    <!-- Fond décoratif -->
+    <div class="premium-section__glow" aria-hidden="true"></div>
+
+    <div class="container">
+
+      <!-- En-tête -->
+      <header class="premium-section__header fade-in">
+        <span class="eyebrow">Offres Exclusives</span>
+        <h2 id="premium-title" class="section-title">
+          Expériences Premium<br><em>&amp; Club Privilège</em>
+        </h2>
+        <div class="gold-line gold-line--center" style="margin-top:1.5rem;"></div>
+        <p class="premium-section__sub">
+          Pour ceux qui exigent l'excellence — deux formules d'exception
+          conçues pour transcender chaque séjour au Complexe.
+        </p>
+      </header>
+
+      <!-- Grille 2 colonnes -->
+      <div class="premium-grid">
+
+        <!-- ─── CARTE 1 : Le Pass Prestige ──────────────────── -->
+        <article class="premium-card premium-card--prestige anim-left"
+                 aria-labelledby="prestige-title">
+
+          <div class="premium-card__topbar" aria-hidden="true"></div>
+          <span class="premium-card__ribbon">Formule Séjour</span>
+
+          <div class="premium-card__header">
+            <div class="premium-card__icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                   stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 44V20.5L24 6l20 14.5V44H4z"/>
+                <rect x="18" y="30" width="12" height="14"/>
+                <path d="M18 22h.01M24 22h.01M30 22h.01"/>
+                <path d="M10 44V32h8v12"/>
+              </svg>
+            </div>
+            <h3 id="prestige-title" class="premium-card__title">Le Pass Prestige</h3>
+            <p class="premium-card__tagline">Formule Séjour Tout-Inclus</p>
+            <div class="premium-card__divider" aria-hidden="true"></div>
+          </div>
+
+          <ul class="premium-card__perks" role="list">
+
+            <li class="premium-perk">
+              <span class="premium-perk__icon" aria-hidden="true">
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                     stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 18V10L10 4l7 6v8H3z"/>
+                  <rect x="7.5" y="12" width="5" height="6"/>
+                </svg>
+              </span>
+              <span>Surclassement en <strong>Villa Privée</strong></span>
+            </li>
+
+            <li class="premium-perk">
+              <span class="premium-perk__icon" aria-hidden="true">
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                     stroke-width="1.5" stroke-linecap="round">
+                  <path d="M2 2v5a5 5 0 0010 0V2"/><path d="M7 2v16"/>
+                  <path d="M18 14V2s-4 3-4 7 4 5 4 5v6"/>
+                </svg>
+              </span>
+              <span><strong>Pension complète</strong> gastronomique</span>
+            </li>
+
+            <li class="premium-perk">
+              <span class="premium-perk__icon" aria-hidden="true">
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                     stroke-width="1.5" stroke-linecap="round">
+                  <path d="M16 9s-3-4.5-6-4.5S4 9 4 9s3 4.5 6 4.5S16 9 16 9z"/>
+                  <circle cx="8.5" cy="8.5" r="1" fill="currentColor" stroke="none"/>
+                  <path d="M16 9l3-3v6l-3-3z"/>
+                </svg>
+              </span>
+              <span>Expérience VIP <em>«&nbsp;De l'étang à l'assiette&nbsp;»</em></span>
+            </li>
+
+            <li class="premium-perk">
+              <span class="premium-perk__icon" aria-hidden="true">
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                     stroke-width="1.5" stroke-linecap="round">
+                  <path d="M2 10c1.5-2.5 3.5-2.5 5 0s3.5 2.5 5 0 3.5-2.5 5 0"/>
+                  <path d="M2 15c1.5-2.5 3.5-2.5 5 0s3.5 2.5 5 0 3.5-2.5 5 0"/>
+                  <circle cx="17" cy="4.5" r="2"/>
+                </svg>
+              </span>
+              <span>Accès prioritaire <strong>Bed VIP</strong> Piscine &amp; <strong>Carré VIP</strong> Night&nbsp;Club</span>
+            </li>
+
+            <li class="premium-perk">
+              <span class="premium-perk__icon" aria-hidden="true">
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                     stroke-width="1.5" stroke-linecap="round">
+                  <rect x="1" y="5" width="12" height="9" rx="1"/>
+                  <path d="M13 8h3l2.5 2.5V14h-5.5V8z"/>
+                  <circle cx="4.5" cy="16.5" r="1.8"/>
+                  <circle cx="15.5" cy="16.5" r="1.8"/>
+                </svg>
+              </span>
+              <span>Navette aéroport <strong>gratuite</strong></span>
+            </li>
+
+          </ul>
+
+          <div class="premium-card__footer">
+            <a href="hotel.html#reserver" class="btn-reserve btn-reserve--filled">
+              Réserver l'Expérience
+            </a>
+            <p class="premium-card__note">Séjour de 2 nuits minimum · Sur disponibilité</p>
+          </div>
+
+        </article>
+        <!-- /Pass Prestige -->
+
+
+        <!-- ─── CARTE 2 : Le Club Signature ─────────────────── -->
+        <article class="premium-card premium-card--signature anim-right"
+                 aria-labelledby="signature-title">
+
+          <div class="premium-card__topbar" aria-hidden="true"></div>
+          <span class="premium-card__ribbon premium-card__ribbon--signature">Abonnement Annuel</span>
+
+          <div class="premium-card__header">
+            <div class="premium-card__icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                   stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M24 6l5.5 11 12 1.75-8.75 8.5 2.25 12L24 33.5l-11 5.75 2.25-12L6.5 18.75l12-1.75L24 6z"/>
+                <circle cx="24" cy="38" r="6"/>
+                <path d="M21 38l2.5 2.5 5-5"/>
+              </svg>
+            </div>
+            <h3 id="signature-title" class="premium-card__title">Le Club Signature</h3>
+            <p class="premium-card__tagline">Abonnement Annuel Privilège</p>
+            <div class="premium-card__divider" aria-hidden="true"></div>
+          </div>
+
+          <ul class="premium-card__perks" role="list">
+
+            <li class="premium-perk">
+              <span class="premium-perk__icon" aria-hidden="true">
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                     stroke-width="1.5" stroke-linecap="round">
+                  <path d="M10 10c-2-2-4-3-6-3a4 4 0 000 8c2 0 4-1 6-3zm0 0c2 2 4 3 6 3a4 4 0 000-8c-2 0-4 1-6 3z"/>
+                </svg>
+              </span>
+              <span><strong>Accès illimité permanent</strong> Piscine &amp; Night Club (avec invités)</span>
+            </li>
+
+            <li class="premium-perk">
+              <span class="premium-perk__icon" aria-hidden="true">
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                     stroke-width="1.5" stroke-linecap="round">
+                  <line x1="17" y1="4" x2="4" y2="17"/>
+                  <circle cx="5.5" cy="5.5" r="2.5"/>
+                  <circle cx="15.5" cy="15.5" r="2.5"/>
+                </svg>
+              </span>
+              <span><strong>–20%</strong> sur les nuitées &amp; <strong>–15%</strong> sur la restauration</span>
+            </li>
+
+            <li class="premium-perk">
+              <span class="premium-perk__icon" aria-hidden="true">
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                     stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="10,2 12.9,7.5 19,8.4 14.5,12.8 15.8,19 10,15.9 4.2,19 5.5,12.8 1,8.4 7.1,7.5"/>
+                </svg>
+              </span>
+              <span>Invitations aux <strong>soirées de gala</strong> privées</span>
+            </li>
+
+            <li class="premium-perk">
+              <span class="premium-perk__icon" aria-hidden="true">
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                     stroke-width="1.5" stroke-linecap="round">
+                  <path d="M15 7A3 3 0 109 7c0 5.5-2.5 7.5-2.5 7.5h11S15 12.5 15 7z"/>
+                  <path d="M11.38 17.5a2 2 0 01-2.76 0"/>
+                </svg>
+              </span>
+              <span>Service de <strong>conciergerie dédié</strong></span>
+            </li>
+
+          </ul>
+
+          <div class="premium-card__footer">
+            <a href="contact.html" class="btn-reserve">
+              Devenir Membre
+            </a>
+            <p class="premium-card__note">Tarification personnalisée · Renseignements sur demande</p>
+          </div>
+
+        </article>
+        <!-- /Club Signature -->
+
+      </div>
+      <!-- /premium-grid -->
+
+    </div>
+  </section>
+  <!-- /OFFRES PREMIUM -->
 
 
   <!-- ======================================================
